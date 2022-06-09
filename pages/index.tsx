@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    Future Portfolio Website of Ariel Pettyjohn | Web Application Engineer + Developer
+                    Future home of arielpettyjohn.com
                 </h1>
             </main>
         </div>
