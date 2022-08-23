@@ -1,0 +1,182 @@
+{
+    "contact": {
+        "name"          : "Ariel Pettyjohn",
+        "email"         : "me@arielpettyjohn.com",
+        "phone"         : "+1 (502) 417-5099",
+        "mailingName"   : "Wesley Ariel Pettyjohn",
+        "mailingAddress": "10333 Main St Apt 358",
+        "mailingCity"   : "Bellevue",
+        "mailingState"  : "WA",
+        "mailingZip"    : "98004",
+        "linkedInURL"   : "https://www.linkedin.com/in/arielpettyjohn/",
+        "linkedInName"  : "arielpettyjohn"
+    },
+    "skills": [
+        "HTML5/CSS3",
+        "React",
+        "Sass",
+        "Node.js",
+        "TypeScript",
+        "Next.js",
+        "AWS",
+        "MySQL"
+    ],
+    "interests": [
+        "AI/ML",
+        "Accessibility",
+        "Generative Art",
+        "Mathematical Logic",
+        "Ontology Engineering",
+        "Digital Signal Processing",
+        "Usability Research",
+        "Data Visualization",
+        "Music Theory",
+        "Economics"
+    ],
+    "profile": "I'm a neurodivergent trans woman with 10 years of experience working in software development. I'm  deeply analytical, inquisitive, patient, pragmatic, and resourceful. I operate by the principles of Agile Design, DevOps, and Servant Leadership and am looking to join a team who shares my values and passion.",
+    "professionalSummary": [
+        "Developed 100+ apps and domains for >500,000 avg. daily users",
+        "3 years in senior positions (managing up to 3 team members)",
+        "10 years as a Web Application Engineer and Developer",
+        "5 years in business as an entrepreneur",
+        "4 years working remotely"
+    ],
+    "professionalExperience": [{
+        "role"        : "Owner + Web Application Architect",
+        "organization": "Web Architecture Solutions",
+        "beginDate"   : "October 2011",
+        "endDate"     : "Present",
+        "location"    : "Remote",
+        "summary"     : "Identify and specify requirements. Create architectural models. Design and engineer web applications.",
+        "clients"     : [
+            "Eurofins Genomics", 
+            "Indiana University Bloomington", 
+            "Sustainability Dashboard", 
+            "Studio Cypher", 
+            "American Louvered Roof Systems"
+        ],
+        "skills": [
+            "React",
+            "JavaScript",
+            "HTML5/CSS3",
+            "Sass",
+            "Firebase",
+            "Redux",
+            "AWS",
+            "MySQL",
+            "Jest"
+        ],
+        "achievements": [
+            "Research with Indiana University Bloomington featured in academic publication",
+            "Built microsite unveiling Eurofins' new oligonucleotide synthesis technology",
+            "Developed proposal for Four Roses Bourbon to showcase user-generated content",
+            "Directed the strategy and launch of 7 digital brands and identities"
+        ]
+    }, {
+        "role"        : "Senior Front-End Engineer",
+        "organization": "1stMILE",
+        "beginDate"   : "July 2019",
+        "endDate"     : "September 2022",
+        "location"    : "Remote",
+        "summary"     : "Engineered next-generation financial products. Integrated multi-application web analytics. Directed front-end testing and deployment. Developed internal training modules and standards. Ensured a consistent experience for end-users and developers alike.",
+        "skills": [
+            "React",
+            "JavaScript",
+            "HTML5/CSS3",
+            "Sass",
+            "Redux",
+            "Laravel",
+            "PHP",
+            "Shell",
+            "Jest"
+        ],
+        "achievements": [
+            "Led front-end development of mobile payment application",
+            "Worked with executives to coordinate integrations with key strategic partners",
+            "Improved productivity of credit application integrations by 4x",
+            "Implemented style guide and reduced line-count of flagship product by >50%"
+        ]
+    }, {
+        "role"        : "Senior Front-End Engineer",
+        "organization": "DBS Interactive",
+        "beginDate"   : "May 2014",
+        "endDate"     : "March 2015",
+        "location"    : "Louisville, KY",
+        "summary"     : "Led front-end development of content management systems. Built and deployed ecommerce solutions, infographics, and eblasts.",
+        "clients"     : [
+            "Humana", 
+            "Maker's Mark", 
+            "The Kentucky Derby",
+            "Big Ass Fans",
+            "Holiday World", 
+            "The Voice-Tribune", 
+            "Stonestreet Farms"
+        ],
+        "skills": [
+            "JavaScript",
+            "HTML5/CSS3",
+            "jQuery",
+            "PHP",
+            "Sass",
+            "WordPress",
+            "MySQL"
+        ],
+        "achievements": [
+            "Managed Big Ass Fans' ecommerce migration from WooCommerce to Magento",
+            "Developed ecommerce storefront for Holiday World",
+            "Re-engineered eblast workflow to increased turnaround 5x",
+            "Built microsite to unveil the first launched wing roller coaster in the U.S."
+        ]
+    }, {
+        "role"        : "Front-End Engineer",
+        "organization": "RFX Technologies",
+        "beginDate"   : "June 2013",
+        "endDate"     : "May 2014",
+        "location"    : "Louisville, KY",
+        "summary"     : "Engineered and maintained websites, intranets, customer relationship management systems, and eblasts.",
+        "clients"     : [
+            "General Electric", 
+            "Home Depot", 
+            "Pillsbury", 
+            "Waste Management", 
+            "Pegasus Transportation", 
+            "Galen College of Nursing",
+            "The Salvation Army"
+        ],
+        "skills": [
+            "JavaScript",
+            "HTML5/CSS3",
+            "jQuery",
+            "Backbone",
+            "AWS",
+            "MySQL",
+            "Docker"
+        ],
+        "achievements" : [
+            "Redeveloped website for General Electric's Appliance and Lighting division",
+            "Developed microsites for Home Depot and Pillsbury",
+            "Built fundraising portal for The Salvation Army",
+            "Maintained CRM for Waste Management"
+        ]
+    }],
+    "academicExperience": [{
+        "organization": "University of Louisville | Economics",
+        "beginDate"   : "August 2015",
+        "endDate"     : "May 2016",
+        "location"    : "Louisville, KY",
+        "achievements": [
+            "Obtained 3.8 GPA",
+            "Academic writing featured as example in course syllabus"
+        ]
+    }, {
+        "organization": "Indiana University Bloomington | Computer Science and Mathematics",
+        "beginDate"   : "August 2008",
+        "endDate"     : "May 2011",
+        "location"    : "Bloomington, IN",
+        "achievements": [
+            "Inaugural Director, Informatics Student Association",
+            "Undergraduate Instructor, Introduction to Informatics",
+            "Gibbs and Undergraduate Research Scholarships"
+        ]
+    }]
+}

@@ -1,0 +1,477 @@
+/* Generic Styles */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    background-color: rgb(55, 55, 55);
+    color: rgb(34, 34, 34);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+        'Helvetica Neue', sans-serif;
+    
+    margin: 0;
+
+    position: relative;
+}
+
+a {
+    color: white;
+}
+
+address {
+    font-style: normal;
+    font-weight: bold;
+
+    padding: 1rem 0;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+h1, h2, h3, h4 {
+    padding: 1rem 0;
+}
+
+h2, h3, h4, h5 {
+    line-height: 1.3;
+}
+
+h2, h3, h4 {
+    background-color: rgb(177, 177, 177);
+
+    padding: 1rem;
+}
+
+h1 { 
+    font-size: 1.802rem; 
+
+    margin: 1rem 0;
+    
+    text-align: center;
+}
+  
+h2 { 
+    font-size: 1.602rem;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 2;
+}
+  
+h3 { 
+    background: none;
+
+    font-size: 1.424rem;   
+
+    z-index: 1;
+}
+  
+h4 { font-size: 1.266rem; }
+  
+h5 { font-size: 1.125rem; }
+
+small, .text_small { font-size: 0.889rem; }
+
+p {
+    margin: 0 0 1rem;
+
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+    
+    margin-bottom: 1rem;
+
+    text-align: left;
+
+    width: 100%;
+}
+
+th {
+    padding: 0;
+}
+
+td {
+    padding: 0;
+}
+
+.section {
+    margin-bottom: 1rem;
+}
+
+/* List Styles */
+
+.List {
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.List li {
+    text-indent: 0px;
+}
+
+.List li:before {
+    content: "–";
+
+    padding-right: 0.62rem;
+
+    text-indent: 0px;
+}
+
+.List--commaSeparated {
+    display: contents;
+
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.List__item--commaSeparated {
+    display: contents;    
+}
+
+.backdrop {
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Resume Styles */
+
+.Resume {
+    display: flex;
+
+    width: 816px;
+
+    margin: 0 auto;
+}
+
+.Resume__footer {
+    background: rgb(144,144,144);
+    height: 10rem;
+    width: 100%;
+
+    position: relative;
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+    color: white;
+
+    padding: 0 1rem;
+
+    text-align: right;
+}
+
+.sidebar__inner {
+    width: fit-content;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    margin: 0 -1rem 1rem -1rem;
+}
+
+.sidebar h2 {
+    background: rgb(89, 89, 89);
+
+    padding-right: 1rem;
+}
+
+.sidebar h3 {
+    background: rgb(55, 55, 55);
+    
+    margin: 0 -1rem 0rem;
+    padding-right: 1rem;
+}
+
+.sidebar .List li:before {
+    content: "";
+
+    padding-right: 0;
+}
+
+.sidebar .List li:after {
+    content: "–";
+
+    padding-left: 0.62rem;
+}
+
+/* Profile Styles */
+
+.profile {
+    font-size: 0.83rem;
+}
+
+.profile h2 {
+    background: rgb(139, 33, 86);
+}
+
+.profile p {
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+/* Contact Styles */
+
+.contact {
+    font-size: 0.83rem;
+}
+
+.contact h2 {
+    background: rgb(122, 29, 122);
+}
+
+.contact h3 {
+    border-top: solid 2px rgb(89, 89, 89);
+    border-bottom: solid 2px rgb(89, 89, 89);
+}
+
+.contactInformation {
+    font-weight: bold;
+
+    text-align: right;
+}
+
+.skills h2 {
+    background: rgb(94, 36, 153);
+}
+
+.interests h2 {
+    background: rgb(33, 86, 139);
+}
+
+/* Content Styles */
+
+.content {
+    background-color: white;
+    border-left: solid 0.625rem rgb(144, 144, 144);
+}
+
+.content h1 {
+    margin: 1rem;
+}
+
+.content h2 {
+    background: rgb(115, 192, 192);
+    
+    margin-right: -2px;    
+}
+
+.content h3 {
+    background: white;
+
+    margin: 0;
+}
+
+/* Experience Summary Styles */
+
+.experiences__summary {
+    font-weight: bold;
+}
+
+.experiences__summary h3 {
+    padding-bottom: 0.38rem;
+}
+
+.experiences__summary .List {
+    padding: 0 1rem 1rem;
+}
+
+.professionalExperiences,
+.academicExperiences {
+    border-top: solid 2px rgb(198, 198, 198);
+}
+
+.ProfessionalExperience {
+    padding: 1rem 1rem;
+}
+
+.ProfessionalExperience:nth-child(even) {
+    background: rgb(198, 198, 198);
+}
+
+.ProfessionalExperience__header {
+    border-bottom: solid 2px rgb(198,198,198);
+
+    padding: 1rem;
+    margin: -1rem -1rem 1rem;
+}
+
+.ProfessionalExperience:nth-child(even) header {
+    background: rgb(177,177,177);
+    border: none;
+}
+
+.content .ProfessionalExperience__heading {
+    background: none;
+    border: none;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    margin: 0;    
+    padding: 0;
+}
+
+.ProfessionalExperience__subheading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProfessionalExperience_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary {
+    margin-bottom: 1rem;
+
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.skills,
+.achievements,
+.interests {
+    font-size: 0.83rem;
+}
+
+.skills {
+    margin-bottom: 1rem;
+}
+
+.skills h5 {
+    display: inline;
+
+    font-size: 0.8rem;
+}
+
+.achievements h5 {
+    display: inline-block;
+
+    font-size: 0.8rem;
+
+    margin-bottom: 0;
+}
+
+.academicExperiences {
+    padding-bottom: 1rem;
+}
+
+.Skill {
+    background: rgb(144, 144, 144);
+
+    position: relative;
+
+    margin: 0.62rem 0;
+}
+
+.Skill__level {
+    background-color: rgb(89, 89, 89);
+
+    padding: 0.38rem;
+
+    z-index: -1;
+}
+
+/* Media Styles */
+
+/* Black and White */
+/*
+@media print {
+    body {
+        background: none;
+    }
+
+    h2, h4 {
+        text-decoration: underline;
+    }
+
+    .Resume {
+        height: 2114px;
+        width: 816px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .Resume__footer {
+        display: none;
+    }
+
+    .sidebar {
+        position: relative;
+    }
+
+    .sidebar,
+    .sidebar a {
+        color: rgb(34, 34, 34);
+    }
+
+    .sidebar h2 {
+        color: white;
+    }
+
+    .content {
+        border: none;
+    }
+
+    h2 {
+        color: rgb(34, 34, 34) !important;
+        background: none !important;
+    }
+
+    .ProfessionalExperience:nth-child(even) {
+        background: none;
+    }
+}
+*/
+
+/* For Print to PDF */
+
+@media print {
+    h2, h3 {
+        position: initial;
+    } 
+
+    .Resume {
+        height: 2112px;
+        width: 816px;
+        overflow: hidden;
+    }
+
+    .content, 
+    .sidebar {
+        border: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    .Resume__footer {
+        display: none;
+    }
+}
