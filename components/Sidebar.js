@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Random from '../Random';
-
 import Skill from './Skill';
 import List  from './List';    
 
