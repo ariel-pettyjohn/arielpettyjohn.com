@@ -9,6 +9,10 @@
 	justify-content: space-between;
 }
 
+.sectionHeading {
+	border-bottom: solid 3px black;
+}
+
 .text {
     display: none;
 }

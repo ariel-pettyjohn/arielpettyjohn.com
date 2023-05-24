@@ -78,7 +78,7 @@ export default function Resume () {
 
                 <main className={styles.main}>
                     <aside className={styles.sidebar}>
-                        <h2>Skills</h2>
+                        <h2 className={styles.sectionHeading}>Skills</h2>
 
                         <dl className={styles.skills}>
                             <dt>Management:</dt> 
@@ -112,7 +112,7 @@ export default function Resume () {
 
                     <div className={styles.content}>
                         <section className={styles.experience}>
-                            <h2>Experience</h2>
+                            <h2 className={styles.sectionHeading}>Experience</h2>
 
                             <article>
                                 <h3>
@@ -172,7 +172,7 @@ export default function Resume () {
                         </section>
 
                         <section className={styles.education}>
-                            <h2>Education</h2>
+                            <h2 className={styles.sectionHeading}>Education</h2>
 
                             <article>
                                 <h3>
