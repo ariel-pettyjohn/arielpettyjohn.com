@@ -31,23 +31,15 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                +1 (425) 543-2271
+                                Phone <img className={styles.icon} src="phone.png" alt="Phone" />
                             </a>
                             
                             <a 
-                                href   = "mailto:ariel.pettyjohn@gmail.com"
+                                href   = "mailto:ariel.pettyjohn@gmail.com;me@ariel.pettyjohn.com"
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                me@arielpettyjohn.com
-                            </a> 
-
-                            <a 
-                                href   = "mailto:ariel.pettyjohn@gmail.com"
-                                target = "_blank"
-                                rel    = "noreferrer"
-                            >
-                                ariel.pettyjohn@gmail.com
+                                Email <img className={styles.icon} src="email.png" alt="Email" />
                             </a> 
                             
                             <a 
@@ -55,7 +47,7 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                LinkedIn
+                                LinkedIn <img className={styles.icon} src="linkedin.png" alt="LinkedIn" />
                             </a>
 
                             <a 
@@ -63,7 +55,7 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                GitHub
+                                GitHub <img className={styles.icon} src="github.png" alt="GitHub" />
                             </a>
                         </address>
                     </aside>
