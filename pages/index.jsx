@@ -24,7 +24,7 @@ export default function Resume () {
                             <span className="h2">Software Engineer</span>
                         </h1>
 
-								<img class ame={styles.photo} src="/photo.png" alt="Ariel Pettyjohn" />
+								<img className={styles.photo} src="/photo.png" alt="Ariel Pettyjohn" />
 
                         <address className={styles.contact}>
                             <span className={styles.text}>Seattle, Washington</span>
