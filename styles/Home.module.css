@@ -3,14 +3,16 @@
     padding: 1rem;
 }
 
+@media (min-width: 576) {
+  .introduction {
+        display: flex;
+    }
+}
+
 @media (min-width: 992px) {
     .Resume {
         max-width: 1440px;
         width: 62%;
-    }
-
-    .introduction {
-        display: flex;
     }
 
     .introduction .sidebar {
