@@ -17,23 +17,16 @@ export default function Resume () {
 
             <section className={styles.Resume}>
                 <section className={styles.introduction}>
-                    <aside className={styles.sidebar}>
-								
+                    <aside className={styles.sidebar}>								
                         <h1>
                             <span>Ariel Pettyjohn</span>
                             <span className="h2">Software Engineer</span>
                         </h1>
 
-								
-
                         <address className={styles.contact}>
                             <span className={styles.text}>Seattle, Washington</span>
                             
-                            <a 
-                                href   = "tel:+14255432271"
-                                //target = "_blank"
-                                //rel    = "noreferrer"
-                            >
+                            <a href   = "tel:+14255432271">
                                 <span className={styles.text}>Phone</span> 
                                 <img className={styles.icon} src="phone.png" alt="Phone" />
                             </a>

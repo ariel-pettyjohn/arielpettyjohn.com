@@ -1,12 +1,18 @@
 .Resume {
     margin: 0 auto;
-    padding: 1rem;
 }
 
 .contact {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.introduction {
+    padding: 1rem;
+
+    position: sticky;
+    top: 0;
 }
 
 .photo {
@@ -34,6 +40,8 @@
     display: flex;
     flex-direction: column-reverse;
 
+    padding: 1rem;
+
     position: relative;
 
     z-index: 1;
@@ -42,6 +50,10 @@
 @media (min-width: 576px) {
     .introduction {
         display: flex;
+
+        padding: 0;
+
+        position: initial;
     }
 
 	.photo {
