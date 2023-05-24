@@ -18,7 +18,6 @@ export default function Resume () {
             <section className={styles.Resume}>
                 <section className={styles.introduction}>
                     <aside className={styles.sidebar}>
-								<img src="/photo.png" alt="Ariel Pettyjohn" />
                         <h1>
                             <span>Ariel Pettyjohn</span>
                             <span className="h2">Software Engineer</span>
@@ -66,7 +65,7 @@ export default function Resume () {
                     </aside>
 
                     <div className={styles.content}>
-                        
+                        <img src="/photo.png" alt="Ariel Pettyjohn" />
 
                         <ul className={styles.summary}>
                             <li>13 years as a Software Engineer leveraging cloud-native services and open-source technology stacks to implement software systems.</li>
