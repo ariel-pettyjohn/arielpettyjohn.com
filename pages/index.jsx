@@ -27,7 +27,7 @@ export default function Resume () {
                             <span className={styles.text}>Seattle, Washington</span>
                             
                             <a 
-                                href   = "tel:+1425-543-2271"
+                                href   = "tel:+14255432271"
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
