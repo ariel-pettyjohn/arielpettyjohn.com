@@ -24,7 +24,7 @@ export default function Resume () {
                             <span className="h2">Software Engineer</span>
                         </h1>
 
-								<img className={styles.photo} src="/photo.png" alt="Ariel Pettyjohn" />
+								
 
                         <address className={styles.contact}>
                             <span className={styles.text}>Seattle, Washington</span>
@@ -68,7 +68,7 @@ export default function Resume () {
                     </aside>
 
                     <div className={styles.content}>
-                        
+                        <img className={styles.photo} src="/photo.png" alt="Ariel Pettyjohn" />
 
                         <ul className={styles.summary}>
                             <li>13 years as a Software Engineer leveraging cloud-native services and open-source technology stacks to implement software systems.</li>
