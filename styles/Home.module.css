@@ -9,6 +9,10 @@
 	justify-content: space-between;
 }
 
+.photo {
+	width: 62%;
+}
+
 .sectionHeading {
 	border-bottom: solid 2px black;
 }
