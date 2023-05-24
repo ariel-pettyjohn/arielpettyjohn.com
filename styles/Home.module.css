@@ -11,6 +11,7 @@
 
 .photo {
 	width: 62%;
+	margin: 0 auto;
 }
 
 .sectionHeading {
@@ -41,6 +42,10 @@
     .introduction {
         display: flex;
     }
+
+	.photo {
+		margin: 0;
+	}
 
 	.contact {
 		flex-direction: column;
