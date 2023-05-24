@@ -74,7 +74,7 @@ export default function Resume () {
                         <ul className={styles.summary}>
                             <li>13 years as a Software Engineer leveraging cloud-native services and open-source technology stacks to implement software systems.</li>
                             <li>3 years directly managing junior engineers and cross-functional relationships between internal and external clients.</li>
-                            <li>Led development of key platforms that collectively serve > 15M monthly users for brands including Eurofins Genomics, Firestone, General Electric, Holiday World, Home Depot, and Pillsbury.</li>
+                            <li>Led development of key platforms that collectively serve &gt; 15M monthly users for brands including Eurofins Genomics, Firestone, General Electric, Holiday World, Home Depot, and Pillsbury.</li>
                             <li>In business 13 years as an entrepreneur and freelance engineer, managing connections with subcontractors and vendors.</li>
                         </ul>
                     </div>
@@ -130,7 +130,7 @@ export default function Resume () {
                                     <li>Delivered microsite to unveil Eurofins' oligonucleotide synthesis technology, which drove 35% more traffic to the primary site on launch.</li>
                                     <li>Performed comprehensive content, performance, and SEO audits across the Eurofins portfolio of sites, which sped up content development time by 10%, improved load times by 20%, and lifted placement in organic search results.</li>
                                     <li>Developed proposals for brands including Four Roses Bourbon to demonstrate possible opportunities and use-cases of user-generated content.</li>
-                                    <li>Maintained CRM system for corporate segment of Waste Management&apos;s > 20 million customers.</li>
+                                    <li>Maintained CRM system for corporate segment of Waste Management&apos;s &gt; 20 million customers.</li>
                                     <li>Built a fundraising portal for The Salvation Army that helped boost donations by 15% that year.</li>
                                 </ul>
                             </article>
