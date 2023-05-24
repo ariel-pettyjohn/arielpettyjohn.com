@@ -28,8 +28,8 @@ export default function Resume () {
                             
                             <a 
                                 href   = "tel:+14255432271"
-                                target = "_blank"
-                                rel    = "noreferrer"
+                                //target = "_blank"
+                                //rel    = "noreferrer"
                             >
                                 <span className={styles.text}>Phone</span> 
                                 <img className={styles.icon} src="phone.png" alt="Phone" />
