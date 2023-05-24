@@ -3,7 +3,12 @@
     padding: 1rem;
 }
 
-@media (min-width: 576) {
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 576px) {
   .introduction {
         display: flex;
     }
@@ -50,6 +55,6 @@
     }
 
     .main {
-        display: flex;
+        flex-direction: row;
     }
 }
