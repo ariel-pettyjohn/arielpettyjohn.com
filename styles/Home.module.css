@@ -4,12 +4,18 @@
 }
 
 .main {
+    background-color: white;
+    
     display: flex;
     flex-direction: column-reverse;
+
+    position: relative;
+
+    z-index: 1;
 }
 
 @media (min-width: 576px) {
-  .introduction {
+    .introduction {
         display: flex;
     }
 
