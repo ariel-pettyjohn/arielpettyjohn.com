@@ -3,6 +3,12 @@
     padding: 1rem;
 }
 
+.contact {
+	display: flex;
+	flex-direction: row:
+	justify-content: space-evenly;
+}
+
 .text {
     display: none;
 }
@@ -27,6 +33,10 @@
     .introduction {
         display: flex;
     }
+
+	.contact {
+		flex-direction: column;
+	}
 
     .text {
         display: inline;

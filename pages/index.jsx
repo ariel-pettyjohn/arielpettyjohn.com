@@ -24,10 +24,10 @@ export default function Resume () {
                         </h1>
 
                         <address className={styles.contact}>
-                            Seattle, Washington
+                            <span className={styles.text}>Seattle, Washington</span>
                             
                             <a 
-                                href   = "tel:+1 (425) 543-2271"
+                                href   = "tel:+1425-543-2271"
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
@@ -45,7 +45,7 @@ export default function Resume () {
                             </a> 
                             
                             <a 
-                                href   = "linkedin.com/in/arielpettyjohn"
+                                href   = "http://www.linkedin.com/in/arielpettyjohn"
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
