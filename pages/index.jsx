@@ -127,7 +127,7 @@ export default function Resume () {
 
                                 <ul>
                                     <li>AI/ML research performed at Indiana University published with dozens of citations.</li>
-                                    <li>Delivered microsite to unveil Eurofins' oligonucleotide synthesis technology, which drove 35% more traffic to the primary site on launch.</li>
+                                    <li>Delivered microsite to unveil Eurofins&apos; oligonucleotide synthesis technology, which drove 35% more traffic to the primary site on launch.</li>
                                     <li>Performed comprehensive content, performance, and SEO audits across the Eurofins portfolio of sites, which sped up content development time by 10%, improved load times by 20%, and lifted placement in organic search results.</li>
                                     <li>Developed proposals for brands including Four Roses Bourbon to demonstrate possible opportunities and use-cases of user-generated content.</li>
                                     <li>Maintained CRM system for corporate segment of Waste Management&apos;s &gt; 20 million customers.</li>
@@ -165,8 +165,8 @@ export default function Resume () {
 
                                 <ul>
                                     <li>Directed front-end development of content management systems for over a dozen clients.</li>
-                                    <li>Crafted infographics for brands including Maker's Mark and The Kentucky Derby, which increased traffic to primary domains by 65% &ndash; 75% on launch.</li>
-                                    <li>Managed Big Ass Fans' ecommerce migration, which limited storefront load times by 10%.</li>
+                                    <li>Crafted infographics for brands including Maker&apos;s Mark and The Kentucky Derby, which increased traffic to primary domains by 65% &ndash; 75% on launch.</li>
+                                    <li>Managed Big Ass Fans&apos; ecommerce migration, which limited storefront load times by 10%.</li>
                                     <li>Engineered the first ecommerce storefront for the Holiday World theme park.</li>
                                     <li>Wrote PHP scripts to re-engineer the e-blast workflow for Humana, which increased turnaround 5x.</li>
                                     <li>Launched microsite to unveil the first launched wing roller coaster in the U.S.</li>
