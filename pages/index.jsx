@@ -31,7 +31,8 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                Phone <img className={styles.icon} src="phone.png" alt="Phone" />
+                                <span className={styles.text}>Phone</span> 
+                                <img className={styles.icon} src="phone.png" alt="Phone" />
                             </a>
                             
                             <a 
@@ -39,7 +40,8 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                Email <img className={styles.icon} src="email.png" alt="Email" />
+                                <span className={styles.text}>Email</span>
+                                <img className={styles.icon} src="email.png" alt="Email" />
                             </a> 
                             
                             <a 
@@ -47,7 +49,8 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                LinkedIn <img className={styles.icon} src="linkedin.png" alt="LinkedIn" />
+                                <span className={styles.text}>LinkedIn</span>
+                                <img className={styles.icon} src="linkedin.png" alt="LinkedIn" />
                             </a>
 
                             <a 
@@ -55,7 +58,8 @@ export default function Resume () {
                                 target = "_blank"
                                 rel    = "noreferrer"
                             >
-                                GitHub <img className={styles.icon} src="github.png" alt="GitHub" />
+                                <span className={styles.text}>GitHub</span>
+                                <img className={styles.icon} src="github.png" alt="GitHub" />
                             </a>
                         </address>
                     </aside>
