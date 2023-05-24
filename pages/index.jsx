@@ -18,11 +18,13 @@ export default function Resume () {
             <section className={styles.Resume}>
                 <section className={styles.introduction}>
                     <aside className={styles.sidebar}>
-								<img src="/photo.png" alt="Ariel Pettyjohn" />
+								
                         <h1>
                             <span>Ariel Pettyjohn</span>
                             <span className="h2">Software Engineer</span>
                         </h1>
+
+								<img src="/photo.png" alt="Ariel Pettyjohn" />
 
                         <address className={styles.contact}>
                             <span className={styles.text}>Seattle, Washington</span>
