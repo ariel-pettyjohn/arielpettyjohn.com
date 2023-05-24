@@ -3,6 +3,10 @@
     padding: 1rem;
 }
 
+.text {
+    display: none;
+}
+
 .icon {
     margin-left: 0.5rem;
     width: 1rem;
@@ -22,6 +26,10 @@
 @media (min-width: 576px) {
     .introduction {
         display: flex;
+    }
+
+    .text {
+        display: inline;
     }
 
 	 .introduction .sidebar {
