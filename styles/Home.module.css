@@ -1,0 +1,39 @@
+.Resume {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (min-width: 992px) {
+    .Resume {
+        max-width: 1440px;
+        width: 62%;
+    }
+
+    .introduction {
+        display: flex;
+    }
+
+    .introduction .sidebar {
+        text-align: right;
+    }
+
+    .sidebar {
+        padding: 1rem;
+    
+        position: sticky;
+        top: 0;
+
+        height: fit-content;
+        width: 38%;
+    }
+    
+    .content {
+        padding: 1rem;
+    
+        width: 62%;
+    }
+
+    .main {
+        display: flex;
+    }
+}

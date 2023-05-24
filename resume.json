@@ -3,11 +3,6 @@
         "name"          : "Ariel Pettyjohn",
         "email"         : "me@arielpettyjohn.com",
         "phone"         : "+1 (502) 417-5099",
-        "mailingName"   : "Wesley Ariel Pettyjohn",
-        "mailingAddress": "10333 Main St Apt 358",
-        "mailingCity"   : "Bellevue",
-        "mailingState"  : "WA",
-        "mailingZip"    : "98004",
         "linkedInURL"   : "https://www.linkedin.com/in/arielpettyjohn/",
         "linkedInName"  : "arielpettyjohn"
     },
@@ -32,8 +27,7 @@
         "Data Visualization",
         "Music Theory",
         "Economics"
-    ],
-    "profile": "I'm a neurodiverse trans woman with 10 years of experience working in software development. I'm  deeply analytical, inquisitive, patient, pragmatic, and resourceful. I operate by the principles of Agile Design, DevOps, and Servant Leadership and am looking to join a team who shares my values and passion.",
+    ],    
     "professionalSummary": [
         "Developed 100+ apps/domains serving >500,000 avg. daily users",
         "3 years in senior positions (managing up to 3 team members)",
@@ -126,37 +120,6 @@
             "Developed ecommerce storefront for Holiday World",
             "Re-engineered eblast workflow to increased turnaround 5x",
             "Built microsite to unveil the first launched wing roller coaster in the U.S."
-        ]
-    }, {
-        "role"        : "Front-End Engineer",
-        "organization": "RFX Technologies",
-        "beginDate"   : "June 2013",
-        "endDate"     : "May 2014",
-        "location"    : "Louisville, KY",
-        "summary"     : "Engineered and maintained websites, intranets, customer relationship management systems, and eblasts.",
-        "clients"     : [
-            "General Electric", 
-            "Home Depot", 
-            "Pillsbury", 
-            "Waste Management", 
-            "Pegasus Transportation", 
-            "Galen College of Nursing",
-            "The Salvation Army"
-        ],
-        "skills": [
-            "JavaScript",
-            "HTML5/CSS3",
-            "jQuery",
-            "Backbone",
-            "AWS",
-            "MySQL",
-            "Docker"
-        ],
-        "achievements" : [
-            "Redeveloped website for General Electric's Appliance and Lighting division",
-            "Developed microsites for Home Depot and Pillsbury",
-            "Built fundraising portal for The Salvation Army",
-            "Maintained CRM for Waste Management"
         ]
     }],
     "academicExperience": [{

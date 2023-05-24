@@ -3,16 +3,11 @@ import React from 'react';
 import Skill from './Skill';
 import List  from './List';    
 
-function Sidebar ({ contact, skills, interests, profile }) {    
+function Sidebar ({ contact, skills, professionalSummary }) {    
     const { 
         name,
         email, 
         phone, 
-        mailingName, 
-        mailingAddress, 
-        mailingCity, 
-        mailingState, 
-        mailingZip,
         linkedInURL,
         linkedInName 
     } = contact;
@@ -29,16 +24,8 @@ function Sidebar ({ contact, skills, interests, profile }) {
     return (
         <aside className='sidebar'>
             <h1>{name}</h1>
-
-            <section className='profile'>
-                <h2>Profile</h2>
-
-                <p>{profile}</p>
-            </section>
-
+        
             <section className='contact'>
-                <h2>Contact</h2>
-
                 <table>
                     <tbody>
                         <tr>
@@ -72,16 +59,12 @@ function Sidebar ({ contact, skills, interests, profile }) {
                         </tr>
                     </tbody>
                 </table>
+            </section>
 
-                <h3>Mailing Address</h3>
-
-                <address>
-                    {mailingName}
-                    <br />
-                    {mailingAddress}
-                    <br />
-                    {mailingCity}, {mailingState} {mailingZip}
-                </address>
+            <section className='experiences__summary'>
+                <h2>Summary</h2>
+                
+                <List listItems={professionalSummary} />
             </section>
 
             <section className='skills'>
@@ -98,12 +81,6 @@ function Sidebar ({ contact, skills, interests, profile }) {
                         </Skill>
                     )}
                 </div>
-            </section>
-
-            <section className='interests'>
-                <h2>Interests</h2>
-
-                <List listItems={interests} />
             </section>
         </aside>
     );
