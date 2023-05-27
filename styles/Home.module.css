@@ -1,6 +1,6 @@
 .Resume {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .contact {
@@ -12,11 +12,15 @@
 .photo {
 	display: block;
 	width: 62%;
-	margin: 0 auto 1rem;
+	margin: 0 auto 2rem;
 }
 
 .sectionHeading {
-	border-bottom: solid 2px black;
+	border-bottom: solid 3px #363636;
+}
+
+.location {
+    display: none;
 }
 
 .text {
@@ -40,12 +44,27 @@
 }
 
 @media (min-width: 576px) {
+    .contact a,
+    .location {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    .Resume {
+        padding: 0;
+    }
+
+    .main {
+        padding: 2rem;
+    }
+
     .introduction {
         display: flex;
     }
 
 	.photo {
-		margin: 0 0 1rem;
+		margin: 0 0 2rem;
 	}
 
 	.contact {
@@ -59,7 +78,7 @@
 	 .introduction .sidebar {
         text-align: right;
 
-			padding: 1rem;
+			padding: 2rem;
     
         position: sticky;
         top: 0;
@@ -69,7 +88,7 @@
     }
 
 	.introduction .content {
-		padding: 1rem;
+		padding: 2rem;
     
         width: 62%;
 	}
@@ -82,7 +101,7 @@
     }
 
     .sidebar {
-        padding: 1rem;
+        padding: 2rem;
     
         position: sticky;
         top: 0;
@@ -92,12 +111,14 @@
     }
     
     .content {
-        padding: 1rem;
+        padding: 2rem;
     
         width: 62%;
     }
 
     .main {
         flex-direction: row;
+
+        padding: 0;
     }
 }

@@ -24,16 +24,13 @@ export default function Resume () {
                             <span className="h2">Software Engineer</span>
                         </h1>
 
-								
-
                         <address className={styles.contact}>
-                            <span className={styles.text}>Seattle, Washington</span>
+                            <span className={styles.location}>
+                                <span className={styles.text}>Seattle, Washington</span>
+                                <img className={styles.icon} src="location.png" alt="Location" />
+                            </span>
                             
-                            <a 
-                                href   = "tel:+14255432271"
-                                //target = "_blank"
-                                //rel    = "noreferrer"
-                            >
+                            <a href="tel:+14255432271">
                                 <span className={styles.text}>Phone</span> 
                                 <img className={styles.icon} src="phone.png" alt="Phone" />
                             </a>
@@ -119,9 +116,8 @@ export default function Resume () {
 
                             <article>
                                 <h3>
-                                    <span>Solutions Architect</span>
-                                    <span>2011 &ndash; Present</span>
-                                    <span className="h4">Web Architecture Solutions, Seattle, WA</span>
+                                    <span>Solutions Architect<br />2011 &ndash; Present</span>
+                                    <span className="h4">Web Architecture Solutions<br />Seattle, WA</span>
                                 </h3>
 
                                 <ul>
@@ -136,9 +132,8 @@ export default function Resume () {
 
                             <article>
                                 <h3>
-                                    <span>Senior Web Application Developer</span>
-                                    <span>2019 &ndash; 2021</span>
-                                    <span className="h4">1stMILE, Redmond, WA</span>
+                                    <span>Senior Web Application Developer<br />2019 &ndash; 2021</span>
+                                    <span className="h4">1stMILE<br />Redmond, WA</span>
                                 </h3>
 
                                 <ul>
@@ -157,9 +152,8 @@ export default function Resume () {
 
                             <article>
                                 <h3>
-                                    <span>Senior Web Developer</span>
-                                    <span>2014 &ndash; 2015</span>
-                                    <span className="h4">DBS Interactive, Louisville, KY</span>
+                                    <span>Senior Web Developer<br />2014 &ndash; 2015</span>
+                                    <span className="h4">DBS Interactive<br />Louisville, KY</span>
                                 </h3>
 
                                 <ul>
@@ -179,17 +173,15 @@ export default function Resume () {
 
                             <article>
                                 <h3>
-                                    <span>Economics</span>
-                                    <span>2015 &ndash; 2016</span>
-                                    <span className="h4">University of Louisville, Louisville, KY</span>
+                                    <span>Economics<br />2015 &ndash; 2016</span>
+                                    <span className="h4">University of Louisville<br />Louisville, KY</span>
                                 </h3>
                             </article>
 
                             <article>
                                 <h3>
-                                    <span>Computer Science and Mathematics</span>
-                                    <span>2008 &ndash; 2010</span>
-                                    <span className="h4">Indiana University Bloomington, Bloomington, IN</span>
+                                    <span>Computer Science and Mathematics<br />2008 &ndash; 2010</span>
+                                    <span className="h4">Indiana University Bloomington<br />Bloomington, IN</span>
                                 </h3>
                             </article>
                         </section>

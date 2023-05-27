@@ -14,7 +14,6 @@ body {
 
 a {
     color: black;
-    text-decoration: none;
 
     display: flex;
     justify-content: flex-end;
@@ -70,6 +69,10 @@ ul {
     padding-left: 1.5rem;
 }
 
+dt {
+    font-weight: 600;
+}
+
 @media (min-width: 576px) {
     h1, .h1 { 
         font-size: 1.802rem; 
@@ -94,6 +97,10 @@ ul {
 }
 
 @media (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6 {
+        width: fit-content;
+    }
+
     h1, .h1 { font-size: 3.052rem; }
     h2, .h2 { font-size: 2.441rem; }
     h3, .h3 { font-size: 1.953rem; }
