@@ -50,6 +50,7 @@ export default function Resume () {
                         <address className={styles.contact}>
                             {contactInformation.map((contactInformation) => 
                                 <ContactInformation 
+                                    key          = {text}
                                     className    = {contactInformation.className}
                                     href         = {contactInformation.href}
                                     externalLink = {contactInformation.externalLink}
