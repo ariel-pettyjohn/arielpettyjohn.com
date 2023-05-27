@@ -1,8 +1,32 @@
-import React from 'react';
-
 import Head from 'next/head';
 
+import ContactInformation from '../components/ContactInformation/ContactInformation';
+
 import styles from '../styles/Home.module.css';
+
+const contactInformation = [{
+    className: styles.location,
+    text     : "Seattle, Washington",
+    src      : "location.png"
+}, {
+    href: "tel:+14255432271",
+    text: "Phone",
+    src : "phone.png"
+}, {
+    href: "mailto:ariel.pettyjohn@gmail.com;me@ariel.pettyjohn.com",
+    text: "Email",
+    src : "email.png"
+}, {
+    href        : "http://www.linkedin.com/in/arielpettyjohn",
+    externalLink: true,
+    text        : "LinkedIn",
+    src         : "linkedin.png"
+}, {
+    href        : "https://github.com/ariel-pettyjohn",
+    externalLink: true,
+    text        : "GitHub",
+    src         : "github.png"
+}];
 
 export default function Resume () {
      return (
@@ -18,49 +42,21 @@ export default function Resume () {
             <section className={styles.Resume}>
                 <section className={styles.introduction}>
                     <aside className={styles.sidebar}>
-								
                         <h1>
                             <span>Ariel Pettyjohn</span>
                             <span className="h2">Software Engineer</span>
                         </h1>
 
                         <address className={styles.contact}>
-                            <span className={styles.location}>
-                                <span className={styles.text}>Seattle, Washington</span>
-                                <img className={styles.icon} src="location.png" alt="Location" />
-                            </span>
-                            
-                            <a href="tel:+14255432271">
-                                <span className={styles.text}>Phone</span> 
-                                <img className={styles.icon} src="phone.png" alt="Phone" />
-                            </a>
-                            
-                            <a 
-                                href   = "mailto:ariel.pettyjohn@gmail.com;me@ariel.pettyjohn.com"
-                                target = "_blank"
-                                rel    = "noreferrer"
-                            >
-                                <span className={styles.text}>Email</span>
-                                <img className={styles.icon} src="email.png" alt="Email" />
-                            </a> 
-                            
-                            <a 
-                                href   = "http://www.linkedin.com/in/arielpettyjohn"
-                                target = "_blank"
-                                rel    = "noreferrer"
-                            >
-                                <span className={styles.text}>LinkedIn</span>
-                                <img className={styles.icon} src="linkedin.png" alt="LinkedIn" />
-                            </a>
-
-                            <a 
-                                href   = "https://github.com/ariel-pettyjohn"
-                                target = "_blank"
-                                rel    = "noreferrer"
-                            >
-                                <span className={styles.text}>GitHub</span>
-                                <img className={styles.icon} src="github.png" alt="GitHub" />
-                            </a>
+                            {contactInformation.map((contactInformation) => 
+                                <ContactInformation 
+                                    className    = {contactInformation.className}
+                                    href         = {contactInformation.href}
+                                    externalLink = {contactInformation.externalLink}
+                                    text         = {contactInformation.text}
+                                    src          = {contactInformation.src}
+                                />
+                            )}
                         </address>
                     </aside>
 

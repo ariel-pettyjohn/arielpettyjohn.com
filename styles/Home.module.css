@@ -1,6 +1,10 @@
 .Resume {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem;
+}
+
+.introduction {
+    margin-bottom: 1rem;
 }
 
 .contact {
@@ -16,20 +20,7 @@
 }
 
 .sectionHeading {
-	border-bottom: solid 3px #363636;
-}
-
-.location {
-    display: none;
-}
-
-.text {
-    display: none;
-}
-
-.icon {
-    margin-left: 0.5rem;
-    width: 1rem;
+	border-bottom: solid 2px #363636;
 }
 
 .main {
@@ -44,19 +35,8 @@
 }
 
 @media (min-width: 576px) {
-    .contact a,
-    .location {
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-
-    .Resume {
-        padding: 0;
-    }
-
     .main {
-        padding: 2rem;
+        /*padding: 0 2rem;*/
     }
 
     .introduction {
@@ -75,10 +55,10 @@
         display: inline;
     }
 
-	 .introduction .sidebar {
+    .introduction .sidebar {
         text-align: right;
 
-			padding: 2rem;
+        padding: 2rem 1rem 0 0;
     
         position: sticky;
         top: 0;
@@ -88,7 +68,7 @@
     }
 
 	.introduction .content {
-		padding: 2rem;
+		padding: 2rem 0 0 1rem;
     
         width: 62%;
 	}
@@ -96,12 +76,37 @@
 
 @media (min-width: 992px) {
     .Resume {
+        padding: 0;
+    }
+
+    .sectionHeading {
+        border-bottom: solid 3px #363636;
+    }
+
+    .Resume {
         max-width: 1440px;
         width: 62%;
     }
 
+    .introduction {
+        margin-bottom: 3rem;
+    }
+
+    .introduction .sidebar {
+        padding: 4rem 2rem 0 0;
+    }
+
+	.introduction .content {
+		padding: 4rem 0 0 2rem;
+	}
+
     .sidebar {
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: right;
+
+        padding-right: 2rem;
     
         position: sticky;
         top: 0;
@@ -111,7 +116,7 @@
     }
     
     .content {
-        padding: 2rem;
+        padding-left: 2rem;
     
         width: 62%;
     }
