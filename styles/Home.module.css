@@ -1,6 +1,6 @@
 .Resume {
     margin: 0 auto;
-    padding: 0 2rem 2rem;
+    padding: 2rem;
 }
 
 .introduction {
@@ -35,8 +35,8 @@
 }
 
 @media (min-width: 576px) {
-    .main {
-        /*padding: 0 2rem;*/
+    .Resume {
+        padding-top: 0;
     }
 
     .introduction {

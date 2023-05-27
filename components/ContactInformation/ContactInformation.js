@@ -7,7 +7,7 @@ export default function ContactInformation ({
     text, 
     src
 }) {
-    const className = `ContactInformation ${_className}`;
+    const className = `${styles.ContactInformation} ${_className}`;
     const innerHTML = (
         <>
             <span className={styles.text}>{text}</span> 
