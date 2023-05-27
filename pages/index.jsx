@@ -40,6 +40,15 @@ export default function Resume () {
             </Head>
 
             <section className={styles.Resume}>
+                <small className={styles.downloadPDF}>
+                    <a 
+                        href   = "Ariel-Pettyjohn_Resume.pdf"
+                        target = "_blank"
+                        rel    = "noreferrer">
+                        Download PDF
+                    </a>
+                </small>
+
                 <section className={styles.introduction}>
                     <aside className={styles.sidebar}>
                         <h1>
