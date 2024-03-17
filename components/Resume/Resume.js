@@ -1,6 +1,40 @@
 import ContactInformation from '../ContactInformation/ContactInformation';
 
+import Experience from '../Experience/Experience';
+
 import styles from './Resume.module.css';
+
+function Education ({ education }) {
+    return (
+        <section className={styles.education}>
+            <h2>Education</h2>
+
+            {education.map(({ 
+                major, 
+                startDate, 
+                endDate, 
+                school, 
+                location 
+            }) =>
+                <article key={major}>
+                    <h3>
+                        <span>
+                            {major}
+                            <br />
+                            {startDate} &ndash; {endDate ?? "Present"}
+                        </span>
+                        
+                        <span className="h4">
+                            {school}
+                            <br />
+                            {location}
+                        </span>
+                    </h3>
+                </article>
+            )}
+        </section>
+    );
+}
 
 export default function Resume ({ 
     pdf,
@@ -35,7 +69,7 @@ export default function Resume ({
                     </h1>
 
                     <ContactInformation 
-                        location           = {location}
+                        location        = {location}
                         pointsOfContact = {pointsOfContact}
                     />
                 </aside>
@@ -56,9 +90,7 @@ export default function Resume ({
 
             <main className={styles.main}>
                 <aside className={styles.sidebar}>
-                    <h2 className={styles.sectionHeading}>
-                        Skills
-                    </h2>
+                    <h2>Skills</h2>
 
                     <dl className={styles.skills}>
                         {skillsets.map(({ category, skills }) => 
@@ -71,72 +103,9 @@ export default function Resume ({
                 </aside>
 
                 <div className={styles.content}>
-                    <section className={styles.experience}>
-                        <h2 className={styles.sectionHeading}>
-                            Experience
-                        </h2>
+                    <Experience experiences={experiences} />
 
-                        {experiences.map(({ 
-                            role, 
-                            startDate, 
-                            endDate, 
-                            employer, 
-                            location, 
-                            highlights 
-                        }) =>
-                            <article key={role}>
-                                <h3>
-                                    <span>
-                                        {role}
-                                        <br />
-                                        {startDate} &ndash; {endDate ?? "Present"}
-                                    </span>
-                                    
-                                    <span className="h4">
-                                        {employer}
-                                        <br />
-                                        {location}
-                                    </span>
-                                </h3>
-
-                                <ul>
-                                    {highlights.map((highlight) => 
-                                        <li>{highlight}</li>
-                                    )}
-                                </ul>
-                            </article>
-                        )}
-                    </section>
-
-                    <section className={styles.education}>
-                        <h2 className={styles.sectionHeading}>
-                            Education
-                        </h2>
-
-                        {education.map(({ 
-                            major, 
-                            startDate, 
-                            endDate, 
-                            school, 
-                            location 
-                        }) =>
-                            <article key={major}>
-                                <h3>
-                                    <span>
-                                        {major}
-                                        <br />
-                                        {startDate} &ndash; {endDate ?? "Present"}
-                                    </span>
-                                    
-                                    <span className="h4">
-                                        {school}
-                                        <br />
-                                        {location}
-                                    </span>
-                                </h3>
-                            </article>
-                        )}
-                    </section>
+                    <Education education={education} />
                 </div>
             </main>
         </section>

@@ -3,7 +3,7 @@ import styles from './ContactInformation.module.css';
 export default function ContactInformation ({ location, pointsOfContact }) {
     return (
         <address className={styles.ContactInformation}>
-            <span>
+            <span className={styles.location}>
                 <span className={styles.text}>
                     {location}
                 </span> 

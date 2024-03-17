@@ -43,10 +43,6 @@
 	margin: 0 auto 2rem;
 }
 
-.sectionHeading {
-	border-bottom: solid 2px #363636;
-}
-
 .main {
     background-color: white;
     
@@ -128,11 +124,7 @@
     .Resume {
         padding: 0;
     }
-
-    .sectionHeading {
-        border-bottom: solid 3px #363636;
-    }
-
+    
     .Resume {
         max-width: 1440px;
         width: 62%;
@@ -178,12 +170,6 @@
     }
 }
 
-.pointOfContact {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-}
-
 .location, .text {
     display: none;
 }
@@ -194,12 +180,6 @@
 }
 
 @media (min-width: 576px) {
-    .pointOfContact, .location {
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-
     .text {
         display: inline;
     }
