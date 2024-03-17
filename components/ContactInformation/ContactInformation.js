@@ -1,35 +1,41 @@
 import styles from './ContactInformation.module.css';
 
-export default function ContactInformation ({ 
-    className: _className = '',
-    href                  = null, 
-    externalLink          = false, 
-    text, 
-    src
-}) {
-    const className = `${styles.ContactInformation} ${_className}`;
-    const innerHTML = (
-        <>
-            <span className={styles.text}>{text}</span> 
-            <img className={styles.icon} src={src} alt={text} />
-        </>
-    );
-    return href && externalLink ? (
-        <a 
-            className = {className}
-            href      = {href}
-            target    = "_blank"
-            rel       = "noreferrer"
-        >
-            {innerHTML}
-        </a>
-    ) : href ? (
-        <a className={className} href={href}>
-            {innerHTML}
-        </a>
-    ) : (
-        <span className={className}>
-            {innerHTML}
-        </span>
+export default function ContactInformation ({ contactInformation }) {
+    return (
+        <div>
+            <span>
+                <span className={styles.text}>
+                    Seattle, Washington
+                </span> 
+                
+                <img 
+                    className = {styles.icon}
+                    src       = "location.png"
+                    alt       = "Seattle, Washington"
+                />
+            </span>
+            
+            {contactInformation.map(({ 
+                href          = null, 
+                externalLink  = false, 
+                text, 
+                src
+            }) => externalLink ? (
+                <a 
+                    className = {styles.ContactInformation}
+                    href      = {href}
+                    target    = "_blank"
+                    rel       = "noreferrer"
+                >
+                    <span className={styles.text}>{text}</span> 
+                    <img className={styles.icon} src={src} alt={text} />
+                </a>
+            ) : (
+                <a className={styles.ContactInformation} href={href}>
+                    <span className={styles.text}>{text}</span> 
+                    <img className={styles.icon} src={src} alt={text} />
+                </a>
+            ))}
+        </div>
     );
 }

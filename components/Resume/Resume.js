@@ -32,22 +32,9 @@ export default function Resume ({
                     </h1>
 
                     <address className={styles.contact}>
-                        {contactInformation.map(({
-                            text,
-                            className,
-                            href,
-                            externalLink,
-                            src
-                        }) => 
-                            <ContactInformation 
-                                key          = {text}
-                                className    = {className}
-                                href         = {href}
-                                externalLink = {externalLink}
-                                text         = {text}
-                                src          = {src}
-                            />
-                        )}
+                        <ContactInformation 
+                            contactInformation = {contactInformation}
+                        />
                     </address>
                 </aside>
 
