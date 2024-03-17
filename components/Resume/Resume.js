@@ -1,7 +1,10 @@
 import ContactInformation from '../ContactInformation/ContactInformation';
 
+import styles from './Resume.module.css';
+
 export default function Resume ({ 
-    name, 
+    firstName, 
+    lastName,
     title, 
     contactInformation, 
     summary, 
@@ -24,7 +27,7 @@ export default function Resume ({
             <section className={styles.introduction}>
                 <aside className={styles.sidebar}>
                     <h1>
-                        <span>{name}</span>
+                        <span>{firstName} {lastName}</span>
                         <span className="h2">{title}</span>
                     </h1>
 

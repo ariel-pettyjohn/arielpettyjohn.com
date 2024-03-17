@@ -24,8 +24,12 @@ export default function ContactInformation ({
             {innerHTML}
         </a>
     ) : href ? (
-        <a className={className} href={href}>{innerHTML}</a>
+        <a className={className} href={href}>
+            {innerHTML}
+        </a>
     ) : (
-        <span className={className}>{innerHTML}</span>
+        <span className={className}>
+            {innerHTML}
+        </span>
     );
 }
