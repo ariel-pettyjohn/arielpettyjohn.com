@@ -1,41 +1,36 @@
 import styles from './ContactInformation.module.css';
 
-export default function ContactInformation ({ contactInformation }) {
+export default function ContactInformation ({ location, pointsOfContact }) {
     return (
-        <div>
+        <address className={styles.ContactInformation}>
             <span>
                 <span className={styles.text}>
-                    Seattle, Washington
+                    {location}
                 </span> 
                 
                 <img 
                     className = {styles.icon}
                     src       = "location.png"
-                    alt       = "Seattle, Washington"
+                    alt       = {location}
                 />
             </span>
             
-            {contactInformation.map(({ 
+            {pointsOfContact.map(({ 
                 href          = null, 
                 externalLink  = false, 
                 text, 
                 src
-            }) => externalLink ? (
+            }) => 
                 <a 
-                    className = {styles.ContactInformation}
+                    className = {styles.pointOfContact}
                     href      = {href}
-                    target    = "_blank"
-                    rel       = "noreferrer"
+                    target    = {externalLink ? "_blank"     : "_self"}
+                    rel       = {externalLink ? "noreferrer" : null}
                 >
                     <span className={styles.text}>{text}</span> 
                     <img className={styles.icon} src={src} alt={text} />
                 </a>
-            ) : (
-                <a className={styles.ContactInformation} href={href}>
-                    <span className={styles.text}>{text}</span> 
-                    <img className={styles.icon} src={src} alt={text} />
-                </a>
-            ))}
-        </div>
+            )}
+        </address>
     );
 }

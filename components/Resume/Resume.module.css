@@ -177,3 +177,30 @@
         padding: 0;
     }
 }
+
+.pointOfContact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.location, .text {
+    display: none;
+}
+
+.icon {
+    margin-left: 0.5rem;
+    width: 1rem;
+}
+
+@media (min-width: 576px) {
+    .pointOfContact, .location {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    .text {
+        display: inline;
+    }
+}

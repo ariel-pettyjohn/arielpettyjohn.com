@@ -3,10 +3,13 @@ import ContactInformation from '../ContactInformation/ContactInformation';
 import styles from './Resume.module.css';
 
 export default function Resume ({ 
+    pdf,
     firstName, 
     lastName,
+    photo,
     title, 
-    contactInformation, 
+    location,
+    pointsOfContact, 
     summary, 
     skillsets, 
     experiences, 
@@ -16,7 +19,7 @@ export default function Resume ({
         <section className={styles.Resume}>
             <small className={styles.downloadPDF}>
                 <a 
-                    href   = "Ariel-Pettyjohn_Resume.pdf"
+                    href   = {pdf}
                     target = "_blank"
                     rel    = "noreferrer"
                 >
@@ -31,17 +34,16 @@ export default function Resume ({
                         <span className="h2">{title}</span>
                     </h1>
 
-                    <address className={styles.contact}>
-                        <ContactInformation 
-                            contactInformation = {contactInformation}
-                        />
-                    </address>
+                    <ContactInformation 
+                        location           = {location}
+                        pointsOfContact = {pointsOfContact}
+                    />
                 </aside>
 
                 <div className={styles.content}>
                     <img className={styles.photo} 
-                        src = "/photo.png" 
-                        alt = "Ariel Pettyjohn" 
+                        src = {photo} 
+                        alt = {`${firstName} ${lastName}`}
                     />
 
                     <ul className={styles.summary}>

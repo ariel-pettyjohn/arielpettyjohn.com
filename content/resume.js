@@ -1,8 +1,11 @@
 const resume = {
-    firstName         : "Ariel",
-    lastName          : "Pettyjohn",
-    title             : "Software Engineer",
-    contactInformation: [{
+    pdf            : "Ariel-Pettyjohn_Resume.pdf",
+    firstName      : "Ariel",
+    lastName       : "Pettyjohn",
+    photo          : "photo.png",
+    title          : "Software Engineer",
+    location       : "Seattle, Washington",
+    pointsOfContact: [{
         href        : "tel:+14255432271",
         text        : "Phone",
         src         : "phone.png"

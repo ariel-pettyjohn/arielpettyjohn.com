@@ -1,4 +1,4 @@
-.ContactInformation {
+.pointOfContact {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
@@ -14,7 +14,7 @@
 }
 
 @media (min-width: 576px) {
-    .ContactInformation, .location {
+    .pointOfContact, .location {
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
