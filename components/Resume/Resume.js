@@ -58,8 +58,8 @@ export default function Resume ({
                     />
 
                     <ul className={styles.summary}>
-                        {summary.map((statement) => 
-                            <li>{statement}</li>
+                        {summary.map((statement, index) => 
+                            <li key={index}>{statement}</li>
                         )}
                     </ul>
                 </div>
@@ -95,7 +95,7 @@ export default function Resume ({
                             location, 
                             highlights 
                         }) =>
-                            <article>
+                            <article key={role}>
                                 <h3>
                                     <span>
                                         {role}
@@ -131,7 +131,7 @@ export default function Resume ({
                             school, 
                             location 
                         }) =>
-                            <article>
+                            <article key={major}>
                                 <h3>
                                     <span>
                                         {major}
