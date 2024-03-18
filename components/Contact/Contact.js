@@ -1,8 +1,8 @@
-import styles from './ContactInformation.module.css';
+import styles from './Contact.module.css';
 
-export default function ContactInformation ({ location, pointsOfContact }) {
+export default function Contact ({ location, pointsOfContact }) {
     return (
-        <address className={styles.ContactInformation}>
+        <address className={styles.Contact}>
             <span className={styles.location}>
                 <span className={styles.text}>
                     {location}

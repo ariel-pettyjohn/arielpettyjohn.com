@@ -1,40 +1,10 @@
-import ContactInformation from '../ContactInformation/ContactInformation';
-
+import Contact    from '../Contact/Contact';
+import Summary    from '../Summary/Summary';
+import Skills     from '../Skills/Skills';
 import Experience from '../Experience/Experience';
+import Education  from '../Education/Education';
 
 import styles from './Resume.module.css';
-
-function Education ({ education }) {
-    return (
-        <section className={styles.education}>
-            <h2>Education</h2>
-
-            {education.map(({ 
-                major, 
-                startDate, 
-                endDate, 
-                school, 
-                location 
-            }) =>
-                <article key={major}>
-                    <h3>
-                        <span>
-                            {major}
-                            <br />
-                            {startDate} &ndash; {endDate ?? "Present"}
-                        </span>
-                        
-                        <span className="h4">
-                            {school}
-                            <br />
-                            {location}
-                        </span>
-                    </h3>
-                </article>
-            )}
-        </section>
-    );
-}
 
 export default function Resume ({ 
     pdf,
@@ -51,16 +21,6 @@ export default function Resume ({
 }) {
     return (
         <section className={styles.Resume}>
-            <small className={styles.downloadPDF}>
-                <a 
-                    href   = {pdf}
-                    target = "_blank"
-                    rel    = "noreferrer"
-                >
-                    Download PDF
-                </a>
-            </small>
-
             <section className={styles.introduction}>
                 <aside className={styles.sidebar}>
                     <h1>
@@ -68,7 +28,7 @@ export default function Resume ({
                         <span className="h2">{title}</span>
                     </h1>
 
-                    <ContactInformation 
+                    <Contact 
                         location        = {location}
                         pointsOfContact = {pointsOfContact}
                     />
@@ -80,11 +40,7 @@ export default function Resume ({
                         alt = {`${firstName} ${lastName}`}
                     />
 
-                    <ul className={styles.summary}>
-                        {summary.map((statement, index) => 
-                            <li key={index}>{statement}</li>
-                        )}
-                    </ul>
+                    <Summary summary={summary} />
                 </div>
             </section>
 
@@ -92,22 +48,33 @@ export default function Resume ({
                 <aside className={styles.sidebar}>
                     <h2>Skills</h2>
 
-                    <dl className={styles.skills}>
-                        {skillsets.map(({ category, skills }) => 
-                            <>
-                                <dt>{category}</dt> 
-                                <dd>{skills}</dd>
-                            </>
-                        )}
-                    </dl>
+                    <Skills skillsets={skillsets} />
                 </aside>
 
                 <div className={styles.content}>
-                    <Experience experiences={experiences} />
+                    <section className={styles.experience}>
+                        <h2>Experience</h2>
+                        
+                        <Experience experiences={experiences} />
+                    </section>
 
-                    <Education education={education} />
+                    <section className={styles.education}>
+                        <h2>Education</h2>
+                        
+                        <Education education={education} />
+                    </section>
                 </div>
             </main>
+
+            <small className={styles.downloadPDF}>
+                <a 
+                    href   = {pdf}
+                    target = "_blank"
+                    rel    = "noreferrer"
+                >
+                    Download PDF
+                </a>
+            </small>
         </section>
     );
 }
