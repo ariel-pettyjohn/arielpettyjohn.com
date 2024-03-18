@@ -4,7 +4,7 @@ import Resume from '../components/Resume/Resume';
 
 import resume from '../content/resume';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 export default function Home () {
      return (
@@ -17,9 +17,21 @@ export default function Home () {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Resume {...resume} />
+            <small className={styles.downloadPDF}>
+                <a 
+                    href   = {resume.pdf}
+                    target = "_blank"
+                    rel    = "noreferrer"
+                >
+                    Download PDF
+                </a>
+            </small>
 
-            <footer className={styles.footer}></footer>
+            <main className={styles.main}>
+                <Resume {...resume} />
+
+                <footer className={styles.footer}></footer>
+            </main>
         </>
     )
 }

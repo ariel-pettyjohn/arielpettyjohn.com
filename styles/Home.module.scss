@@ -1,0 +1,64 @@
+.downloadPDF {
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 89, 89);
+    position: fixed;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main {
+    position: relative;
+    top: 2rem;
+}
+
+.footer {
+    background-color: rgb(149, 149, 149);
+
+    height: 100vh;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .downloadPDF {
+        border-top: 100px solid rgb(89, 89, 89);
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid transparent;
+        position: fixed;
+        right: 0;
+        z-index: 9999;
+        background-color: transparent;
+        width: auto;
+
+        a {
+            position: absolute;
+            top: -100px;
+            right: 0;
+            text-align: right;
+            font-family: arial;
+            display: block;
+            color: white;
+            padding: 0.5rem 0.5rem 0 0;
+            text-decoration: none;
+            margin: 0;
+            width: auto;
+        }
+    }
+
+    .main {
+        top: 0;
+    }
+}

@@ -44,7 +44,7 @@ export default function Resume ({
                 </div>
             </section>
 
-            <main className={styles.main}>
+            <div className={styles.main}>
                 <aside className={styles.sidebar}>
                     <h2 className="h5">Skills</h2>
 
@@ -64,17 +64,7 @@ export default function Resume ({
                         <Education education={education} />
                     </section>
                 </div>
-            </main>
-
-            <small className={styles.downloadPDF}>
-                <a 
-                    href   = {pdf}
-                    target = "_blank"
-                    rel    = "noreferrer"
-                >
-                    Download PDF
-                </a>
-            </small>
+            </div>
         </section>
     );
 }
