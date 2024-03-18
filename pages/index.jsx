@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { getCurrentYear } from '../util';
+
 import Resume from '../components/Resume/Resume';
 
 import resume from '../content/resume';
@@ -30,7 +32,11 @@ export default function Home () {
             <main className={styles.main}>
                 <Resume {...resume} />
 
-                <footer className={styles.footer}></footer>
+                <footer className={styles.footer}>
+                    <span className={styles.copyright}>
+                        Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
+                    </span>
+                </footer>
             </main>
         </>
     )
