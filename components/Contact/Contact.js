@@ -26,6 +26,7 @@ export default function Contact ({ location, pointsOfContact }) {
                     href      = {href}
                     target    = {externalLink ? "_blank"     : "_self"}
                     rel       = {externalLink ? "noreferrer" : null}
+                    key       = {text}
                 >
                     <span className={styles.text}>{text}</span> 
                     <img className={styles.icon} src={src} alt={text} />

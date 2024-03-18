@@ -23,8 +23,8 @@ export default function Experience ({ experiences }) {
             </h3>
 
             <ul>
-                {highlights.map((highlight) => 
-                    <li>{highlight}</li>
+                {highlights.map((highlight, index) => 
+                    <li key={index}>{highlight}</li>
                 )}
             </ul>
         </article>
