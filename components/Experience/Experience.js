@@ -24,7 +24,9 @@ export default function Experience ({ experiences }) {
 
             <ul>
                 {highlights.map((highlight, index) => 
-                    <li key={index}>{highlight}</li>
+                    <li key={index}>
+                        {highlight}
+                    </li>
                 )}
             </ul>
         </article>

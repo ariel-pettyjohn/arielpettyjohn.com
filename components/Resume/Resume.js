@@ -4,7 +4,7 @@ import Skills     from '../Skills/Skills';
 import Experience from '../Experience/Experience';
 import Education  from '../Education/Education';
 
-import styles from './Resume.module.css';
+import styles from './Resume.module.scss';
 
 export default function Resume ({ 
     pdf,

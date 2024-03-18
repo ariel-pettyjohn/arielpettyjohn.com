@@ -1,0 +1,162 @@
+.Resume {
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    top: 2rem;
+}
+
+.introduction {
+    margin-bottom: 1rem;
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.photo {
+	display: block;
+	width: 62%;
+	margin: 0 auto 2rem;
+}
+
+.main {
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column-reverse;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.downloadPDF {
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {        
+    .Resume {
+        padding-top: 0;
+        top: 0;
+    }
+
+    .introduction {
+        display: flex;
+
+        .sidebar {
+            text-align: right;
+    
+            padding: 2rem 1rem 0 0;
+        
+            position: sticky;
+            top: 0;
+    
+            height: fit-content;
+            width: 38%;
+        }
+
+        .content {
+            padding: 2rem 0 0 1rem;
+        
+            width: 62%;
+        }
+    }
+
+	.photo {
+		margin: 0 0 2rem;
+	}
+
+    .downloadPDF {
+        border-top: 100px solid black;
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid transparent;
+        position: fixed;
+        right: 0;
+        z-index: 9999;
+        background-color: transparent;
+        width: auto;
+
+        a {
+            position: absolute;
+            top: -100px;
+            right: 0;
+            text-align: right;
+            font-family: arial;
+            display: block;
+            color: white;
+            padding: 0.5rem 0.5rem 0 0;
+            text-decoration: none;
+            margin: 0;
+            width: auto;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .Resume {
+        max-width: 1440px;
+        
+        padding: 0;
+        
+        width: 62%;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+
+        padding-right: 2rem;
+    
+        position: sticky;
+        top: 0;
+
+        height: fit-content;
+        width: 38%;
+    }
+    
+    .content {
+        padding-left: 2rem;
+    
+        width: 62%;
+    }
+
+    .introduction {
+        margin-bottom: 3rem;
+
+        .sidebar {
+            padding: 4rem 2rem 0 0;
+        }
+
+        .content {
+            padding: 4rem 0 0 2rem;
+        }
+    }
+
+    .main {
+        flex-direction: row;
+
+        padding: 0;
+    }
+}
