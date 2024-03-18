@@ -20,51 +20,57 @@ export default function Resume ({
     education 
 }) {
     return (
-        <section className={styles.Resume}>
-            <section className={styles.introduction}>
-                <aside className={styles.sidebar}>
+        <main className={styles.Resume}>
+            <div className={styles.introduction}>
+                <header className={styles.header}>
                     <h1 className={`h3 ${styles.masthead}`}>
                         <span>{firstName} {lastName}</span>
-                        <span className="h4">{title}</span>
+                        <span className={`h4 ${styles.title}`}>{title}</span>
                     </h1>
 
                     <Contact 
                         location        = {location}
                         pointsOfContact = {pointsOfContact}
                     />
-                </aside>
+                </header>
 
-                <div className={styles.content}>
+                <section className={styles.profile}>
                     <img className={styles.photo} 
                         src = {photo} 
                         alt = {`${firstName} ${lastName}`}
                     />
 
                     <Summary summary={summary} />
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div className={styles.main}>
-                <aside className={styles.sidebar}>
-                    <h2 className="h5">Skills</h2>
+                <aside className={styles.skills}>
+                    <header>
+                        <h2 className="h5">Skills</h2>
+                    </header>
 
                     <Skills skillsets={skillsets} />
                 </aside>
 
                 <div className={styles.content}>
                     <section className={styles.experience}>
-                        <h2 className="h5">Experience</h2>
+                        <header>
+                            <h2 className="h5">Experience</h2>
+                        </header>
                         
                         <Experience experiences={experiences} />
                     </section>
 
                     <section className={styles.education}>
-                        <h2 className="h5">Education</h2>
+                        <header>
+                            <h2 className="h5">Education</h2>
+                        </header>
                         
                         <Education education={education} />
                     </section>
                 </div>
             </div>
-        </section>
+        </main>
     );
 }

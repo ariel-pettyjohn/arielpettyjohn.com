@@ -20,30 +20,6 @@
     }
 }
 
-.main {
-    position: relative;
-    top: 2rem;
-}
-
-.footer {
-    background-color: #cfd4d8;
-
-    border-top: solid 3.5px #6a747d;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    height: 100vh;
-    width: 100%;
-}
-
-.copyright {
-    font-size: 12px;
-    
-    margin-bottom: 0.5rem;
-}
-
 @media (min-width: 992px) {
     .downloadPDF {
         border-top: 100px solid #6a747d;
@@ -68,9 +44,5 @@
             margin: 0;
             width: auto;
         }
-    }
-
-    .main {
-        top: 0;
     }
 }

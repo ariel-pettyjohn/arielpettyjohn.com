@@ -8,15 +8,14 @@ export default function Experience ({ experiences }) {
         highlights 
     }) =>
         <article key={role}>
-            <h3 className="h6">
-                <span>
-                    {role}
-                </span>
-                
+            <header>
+                <h3 className="h6">{role}</h3>
+
                 <span className="text--small">
                     {employer}, {startDate} &ndash; {endDate ?? "Present"}
                 </span>
-            </h3>
+            </header>
+            
 
             <ul>
                 {highlights.map((highlight, index) => 

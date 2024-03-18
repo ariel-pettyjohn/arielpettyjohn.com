@@ -29,15 +29,7 @@ export default function Home () {
                 </a>
             </small>
 
-            <main className={styles.main}>
-                <Resume {...resume} />
-
-                <footer className={styles.footer}>
-                    <span className={styles.copyright}>
-                        Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
-                    </span>
-                </footer>
-            </main>
+            <Resume {...resume} />
         </>
     )
 }

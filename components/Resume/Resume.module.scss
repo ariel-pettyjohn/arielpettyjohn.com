@@ -1,31 +1,35 @@
-.Resume {
-    margin: 0 auto;
-    padding: 1rem;
+.introduction {
+    display: flex;
+    flex-direction: column;
 }
 
-.introduction {
+.header {
+    background: #e1eaf3;
+    
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+
     margin-bottom: 1rem;
+    padding: 1rem;
 
-    .sidebar {
-        background: #e1eaf3;
-
-        border-bottom: solid 3.5px #6a747d;
+    .masthead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
         margin-bottom: 1rem;
-        padding: 1rem;
     }
-}
-
-.masthead {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
 }
 
 .photo {
     display: block;
 	width: calc(62%);
 	margin: 0 auto 1rem;
+}
+
+.skills {
+    display: block;
 }
 
 .main {
@@ -39,91 +43,103 @@
     z-index: 1;
 }
 
+.experience { display: block; }
+
+.education { display: block; }
+
 @media (min-width: 576px) {     
     .Resume {
         padding: 2rem;
     }
     
-    .masthead { 
+    .header {
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
 
-        width: 62%;
+        text-align: right;
+
+        position: sticky;
+        top: 2rem;
+
+        height: fit-content;
+
+        width: calc(38% - 3rem);
+        margin: 0 1rem 0 0;
+        padding: 1rem;
+
+        .masthead {
+            flex-direction: column;
+
+            word-spacing: 9999px;
+        }
     }
 
     .introduction {
-        display: flex;
+        flex-direction: row;
 
-        .sidebar {
-            border-bottom: solid 3.5px #6a747d;
-            border-left: solid #6a747d 3.5px;
+        margin-bottom: 2rem;
+    }
 
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-
-            text-align: right;
-    
-            margin-right: 2rem;
-            padding: 1rem;
-        
-            position: sticky;
-            top: 2rem;
-    
-            height: fit-content;
-            width: calc(38% - 2rem);
-        }
-
-        .content {
-            padding: 1rem;
-        
-            width: calc(62% - 1rem);
-        }
+    .profile {
+        width: calc(62% - 1rem);
+        margin-left: 1rem;
     }
 
 	.photo {
 		margin: 0 0 2rem;
 	}
+
+    .skills {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media (min-width: 992px) {
     .Resume {
         max-width: 1440px;
 
+        margin: 2rem auto;
         padding: 2rem 0;
 
         width: 62%;
     }
 
-    .sidebar {
+    .introduction {
+        margin-bottom: 4rem;
+    }
+
+    .content, .profile {
+        width: calc(62% - 2rem);
+        margin-left: 2rem;
+    }
+
+    .skills {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         text-align: right;
-        
-        margin-right: 1rem;
-        padding: 1rem;
 
         position: sticky;
         top: 0;
 
         height: fit-content;
-        width: calc(38% - 1rem);
+
+        margin-right: 2rem;
+        width: calc(38% - 2rem);
     }
     
-    .content {
-        margin-left: 1rem;
-        padding: 1rem;
-    
-        width: calc(62% - 1rem);
+    .photo {
+        margin-bottom: 4rem;
     }
 
-    .introduction {
-        margin-bottom: 2rem;
+    .header {
+        margin: 0 2rem 0 0;
 
-        .sidebar {
-            top: 0;
-        }
+        top: 0;
+
+        width: calc(38% - 4rem);
     }
 
     .main {
