@@ -11,25 +11,24 @@
     justify-content: space-around;
 
     margin-bottom: 1rem;
-    padding: 1rem;
-
-    .masthead {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        margin-bottom: 1rem;
+    
+    .header__inner {
+        padding: 1rem;
     }
+}
+
+.masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 1rem;
 }
 
 .photo {
     display: block;
 	width: calc(62%);
 	margin: 0 auto 1rem;
-}
-
-.skills {
-    display: block;
 }
 
 .main {
@@ -43,6 +42,14 @@
     z-index: 1;
 }
 
+.sectionHeader {
+    border-bottom: solid 2px #363636;
+}
+
+.skills {
+    display: block;
+}
+
 .experience { display: block; }
 
 .education { display: block; }
@@ -52,33 +59,33 @@
         padding: 2rem;
     }
     
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-
-        text-align: right;
-
-        position: sticky;
-        top: 2rem;
-
-        height: fit-content;
-
-        width: calc(38% - 3rem);
-        margin: 0 1rem 0 0;
-        padding: 1rem;
-
-        .masthead {
-            flex-direction: column;
-
-            word-spacing: 9999px;
-        }
-    }
-
     .introduction {
         flex-direction: row;
 
         margin-bottom: 2rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        text-align: right;
+
+        width: calc(38% - 1rem);
+        margin: 0 1rem 0 0;
+
+        .header__inner {
+            position: sticky;
+            top: 2rem;
+        }
+    }
+
+    .masthead {
+        flex-direction: column;
+
+        word-spacing: 9999px;
     }
 
     .profile {
@@ -110,9 +117,33 @@
         margin-bottom: 4rem;
     }
 
-    .content, .profile {
+    .header {
+        margin: 0 2rem 0 0;
+
+        width: calc(38% - 2rem);
+
+        .header__inner {
+            top: 0;
+        }
+    }
+
+    .profile, .content {
         width: calc(62% - 2rem);
         margin-left: 2rem;
+    }
+
+    .photo {
+        margin-bottom: 4rem;
+    }
+
+    .main {
+        flex-direction: row;
+
+        padding: 0;
+    }
+
+    .sectionHeader {
+        border-bottom: solid 3px #363636;
     }
 
     .skills {
@@ -128,23 +159,5 @@
 
         margin-right: 2rem;
         width: calc(38% - 2rem);
-    }
-    
-    .photo {
-        margin-bottom: 4rem;
-    }
-
-    .header {
-        margin: 0 2rem 0 0;
-
-        top: 0;
-
-        width: calc(38% - 4rem);
-    }
-
-    .main {
-        flex-direction: row;
-
-        padding: 0;
     }
 }

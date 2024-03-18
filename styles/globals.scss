@@ -38,10 +38,6 @@ h5, .h5 { font-size: 1.138rem; }
 h6, .h6 { font-size: 1.067rem; }
 small, .text--small { font-size: 0.937rem; }
 
-h2 {
-    border-bottom: solid 2px #363636;
-}
-
 img {
     height: auto;
     width: 100%;
@@ -85,8 +81,6 @@ aside, section {
 }
 
 article {
-    display: flow-root;
-
     margin-bottom: 1rem;
     
     &:last-child {
@@ -106,12 +100,6 @@ article {
     aside, section {
         margin-bottom: 1rem;
         padding: 0;
-
-        /*
-        &:last-child {
-            margin-bottom: 0;
-        }
-        */
     }
 }
 
@@ -126,10 +114,6 @@ article {
 }
 
 @media (min-width: 992px) {
-    h1, h2, h3, h4, h5, h6 {
-        width: fit-content;
-    }
-
     h1, .h1 { font-size: 3.815rem; }
     h2, .h2 { font-size: 3.052rem; }
     h3, .h3 { font-size: 2.441rem; }
@@ -137,10 +121,6 @@ article {
     h5, .h5 { font-size: 1.563rem; }
     h6, .h6 { font-size: 1.25rem; }
     small, .text--small { font-size: 0.8rem; }
-
-    h2 {
-        border-bottom: solid 3px #363636;
-    }
 }
 
 @media (min-width: 1200px) {

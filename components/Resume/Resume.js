@@ -23,15 +23,17 @@ export default function Resume ({
         <main className={styles.Resume}>
             <div className={styles.introduction}>
                 <header className={styles.header}>
-                    <h1 className={`h3 ${styles.masthead}`}>
-                        <span>{firstName} {lastName}</span>
-                        <span className={`h4 ${styles.title}`}>{title}</span>
-                    </h1>
+                    <div className={styles.header__inner}>
+                        <h1 className={`h3 ${styles.masthead}`}>
+                            <span>{firstName} {lastName}</span>
+                            <span className={`h4 ${styles.title}`}>{title}</span>
+                        </h1>
 
-                    <Contact 
-                        location        = {location}
-                        pointsOfContact = {pointsOfContact}
-                    />
+                        <Contact 
+                            location        = {location}
+                            pointsOfContact = {pointsOfContact}
+                        />
+                    </div>
                 </header>
 
                 <section className={styles.profile}>
@@ -46,7 +48,7 @@ export default function Resume ({
 
             <div className={styles.main}>
                 <aside className={styles.skills}>
-                    <header>
+                    <header className={styles.sectionHeader}>
                         <h2 className="h5">Skills</h2>
                     </header>
 
@@ -55,7 +57,7 @@ export default function Resume ({
 
                 <div className={styles.content}>
                     <section className={styles.experience}>
-                        <header>
+                        <header className={styles.sectionHeader}>
                             <h2 className="h5">Experience</h2>
                         </header>
                         
@@ -63,7 +65,7 @@ export default function Resume ({
                     </section>
 
                     <section className={styles.education}>
-                        <header>
+                        <header className={styles.sectionHeader}>
                             <h2 className="h5">Education</h2>
                         </header>
                         
