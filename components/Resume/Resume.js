@@ -23,9 +23,9 @@ export default function Resume ({
         <section className={styles.Resume}>
             <section className={styles.introduction}>
                 <aside className={styles.sidebar}>
-                    <h1 className={`h2 ${styles.masthead}`}>
+                    <h1 className={`h3 ${styles.masthead}`}>
                         <span>{firstName} {lastName}</span>
-                        <span className="h3">{title}</span>
+                        <span className="h4">{title}</span>
                     </h1>
 
                     <Contact 

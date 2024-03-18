@@ -4,7 +4,7 @@ const resume = {
     lastName       : "Pettyjohn",
     photo          : "photo.png",
     title          : "Software Engineer",
-    location       : "Seattle, Washington",
+    location       : "Seattle, WA",
     pointsOfContact: [{
         href        : "tel:+14255432271",
         text        : "Phone",

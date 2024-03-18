@@ -3,7 +3,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: rgb(89, 89, 89);
+    background-color: #6a747d;
     position: fixed;
     top: 0;
     text-align: right;
@@ -26,7 +26,9 @@
 }
 
 .footer {
-    background-color: rgb(149, 149, 149);
+    background-color: #cfd4d8;
+
+    border-top: solid 3.5px #6a747d;
 
     display: flex;
     align-items: flex-end;
@@ -44,7 +46,7 @@
 
 @media (min-width: 992px) {
     .downloadPDF {
-        border-top: 100px solid rgb(89, 89, 89);
+        border-top: 100px solid #6a747d;
         border-bottom: 100px solid transparent;
         border-left: 100px solid transparent;
         position: fixed;
