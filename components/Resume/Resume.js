@@ -26,7 +26,10 @@ export default function Resume ({
                     <div className={styles.header__inner}>
                         <h1 className={`h3 ${styles.masthead}`}>
                             <span>{firstName} {lastName}</span>
-                            <span className={`h4 ${styles.title}`}>{title}</span>
+
+                            <span className={styles.separator}>|</span>
+                            
+                            <span className="h4">{title}</span>
                         </h1>
 
                         <Contact 
