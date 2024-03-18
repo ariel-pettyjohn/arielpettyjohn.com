@@ -1,6 +1,6 @@
 .Resume {
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     position: relative;
     top: 2rem;
 }
@@ -11,14 +11,8 @@
 
 .masthead {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-}
-
-.contact {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 .photo {
@@ -62,7 +56,6 @@
 
 @media (min-width: 576px) {        
     .Resume {
-        padding-top: 0;
         top: 0;
     }
 
@@ -79,7 +72,7 @@
         .sidebar {
             text-align: right;
     
-            padding: 2rem 1rem 0 0;
+            padding: 0 1rem 0 0;
         
             position: sticky;
             top: 0;
@@ -89,7 +82,7 @@
         }
 
         .content {
-            padding: 2rem 0 0 1rem;
+            padding: 0 0 0 1rem;
         
             width: 62%;
         }
@@ -128,7 +121,7 @@
 @media (min-width: 992px) {
     .Resume {
         max-width: 1440px;
-        
+
         padding: 4rem 0;
         
         width: 62%;
