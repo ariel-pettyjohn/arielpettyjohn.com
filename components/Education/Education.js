@@ -7,17 +7,13 @@ export default function Education ({ education }) {
         location 
     }) =>
         <article key={major}>
-            <h3>
+            <h3 className="h6">
                 <span>
                     {major}
-                    <br />
-                    {startDate} &ndash; {endDate ?? "Present"}
                 </span>
                 
-                <span className="h4">
-                    {school}
-                    <br />
-                    {location}
+                <span className="text--small">
+                    {school}, {startDate} &ndash; {endDate ?? "Present"}
                 </span>
             </h3>
         </article>

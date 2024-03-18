@@ -23,9 +23,9 @@ export default function Resume ({
         <section className={styles.Resume}>
             <section className={styles.introduction}>
                 <aside className={styles.sidebar}>
-                    <h1>
+                    <h1 className={`h2 ${styles.masthead}`}>
                         <span>{firstName} {lastName}</span>
-                        <span className="h2">{title}</span>
+                        <span className="h3">{title}</span>
                     </h1>
 
                     <Contact 
@@ -46,20 +46,20 @@ export default function Resume ({
 
             <main className={styles.main}>
                 <aside className={styles.sidebar}>
-                    <h2>Skills</h2>
+                    <h2 className="h5">Skills</h2>
 
                     <Skills skillsets={skillsets} />
                 </aside>
 
                 <div className={styles.content}>
                     <section className={styles.experience}>
-                        <h2>Experience</h2>
+                        <h2 className="h5">Experience</h2>
                         
                         <Experience experiences={experiences} />
                     </section>
 
                     <section className={styles.education}>
-                        <h2>Education</h2>
+                        <h2 className="h5">Education</h2>
                         
                         <Education education={education} />
                     </section>

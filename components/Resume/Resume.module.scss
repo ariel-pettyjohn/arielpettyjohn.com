@@ -1,12 +1,18 @@
 .Resume {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
     position: relative;
     top: 2rem;
 }
 
 .introduction {
     margin-bottom: 1rem;
+}
+
+.masthead {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .contact {
@@ -16,8 +22,8 @@
 }
 
 .photo {
-	display: block;
-	width: 62%;
+    display: block;
+	width: calc(62%);
 	margin: 0 auto 2rem;
 }
 
@@ -37,7 +43,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(89, 89, 89);
     position: fixed;
     top: 0;
     text-align: right;
@@ -58,6 +64,13 @@
     .Resume {
         padding-top: 0;
         top: 0;
+    }
+
+    .masthead { 
+        flex-direction: column;
+        align-items: flex-end;
+
+        padding-left: 38%;
     }
 
     .introduction {
@@ -87,7 +100,7 @@
 	}
 
     .downloadPDF {
-        border-top: 100px solid black;
+        border-top: 100px solid rgb(89, 89, 89);
         border-bottom: 100px solid transparent;
         border-left: 100px solid transparent;
         position: fixed;
@@ -116,7 +129,7 @@
     .Resume {
         max-width: 1440px;
         
-        padding: 0;
+        padding: 4rem 0;
         
         width: 62%;
     }
@@ -146,11 +159,11 @@
         margin-bottom: 3rem;
 
         .sidebar {
-            padding: 4rem 2rem 0 0;
+            padding: 0 2rem 0 0;
         }
 
         .content {
-            padding: 4rem 0 0 2rem;
+            padding: 0 0 0 2rem;
         }
     }
 
