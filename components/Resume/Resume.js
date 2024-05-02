@@ -7,7 +7,6 @@ import Education  from '../Education/Education';
 import styles from './Resume.module.scss';
 
 export default function Resume ({ 
-    pdf,
     firstName, 
     lastName,
     photo,

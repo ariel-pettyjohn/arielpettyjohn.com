@@ -18,17 +18,23 @@
         width: 100%;
         text-align: center;
     }
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #505A5E;   
+    }
 }
 
 @media (min-width: 992px) {
     .downloadPDF {
         border-top: 100px solid #6a747d;
-        border-bottom: 100px solid transparent;
         border-left: 100px solid transparent;
         position: fixed;
         right: 0;
         z-index: 9999;
         background-color: transparent;
+        height: auto;
         width: auto;
 
         a {
@@ -43,6 +49,11 @@
             text-decoration: none;
             margin: 0;
             width: auto;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-top: 100px solid #505A5E;
         }
     }
 }

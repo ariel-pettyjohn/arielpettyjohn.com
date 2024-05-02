@@ -34,6 +34,12 @@
     cursor: pointer;
 
     padding: 0.5rem;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #505A5E;   
+    }
 }
 
 @media (min-width: 576px) {   
@@ -44,7 +50,7 @@
             width: calc(50% - 0.5rem);
         }
     }
-    
+
 }
 
 @media (min-width: 992px) {
