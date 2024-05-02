@@ -1,0 +1,53 @@
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .field {
+        width: 100%;
+    }
+}
+
+.field {
+    display: flex;       
+    flex-direction: column;
+    
+    margin-bottom: 1rem;
+}
+
+.message {
+    aspect-ratio: 2 / 1;
+}
+
+.button {
+    background: #6a747d;
+    border: none;
+    color: white;
+
+    cursor: pointer;
+
+    padding: 0.5rem;
+}
+
+@media (min-width: 576px) {   
+    .row {
+        flex-direction: row;
+
+        .field {
+            width: calc(50% - 0.5rem);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ContactForm {
+        width: 62%;
+    }
+}

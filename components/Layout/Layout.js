@@ -1,4 +1,4 @@
-import { getCurrentYear } from '../../util';
+import Footer from '../Footer/Footer';
 
 import styles from './Layout.module.scss';
 
@@ -7,11 +7,7 @@ export default function Layout ({ Page, props }) {
         <div className={styles.container}>
             <Page {...props} />
 
-            <footer className={styles.footer}>
-                <span className={styles.copyright}>
-                    Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
-                </span>
-            </footer>
+            <Footer />
         </div>
     );
 }
