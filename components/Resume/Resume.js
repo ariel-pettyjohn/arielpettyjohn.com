@@ -22,6 +22,8 @@ export default function Resume ({
         <main className={styles.Resume}>
             <div className={styles.introduction}>
                 <header className={styles.header}>
+                    <small className={styles.corner}></small>
+                    
                     <div className={styles.header__inner}>
                         <h1 className={`h3 ${styles.masthead}`}>
                             <span>{firstName} {lastName}</span>

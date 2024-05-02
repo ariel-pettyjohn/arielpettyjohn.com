@@ -11,10 +11,16 @@
     justify-content: space-around;
 
     margin-bottom: 1rem;
-    
+
+    position: relative;
+
     .header__inner {
         padding: 1rem;
     }
+}
+
+.corner {
+    display: none;
 }
 
 .masthead {
@@ -83,6 +89,21 @@
         }
     }
 
+    .corner {
+        background-color: transparent;
+        
+        border-top: 2rem solid white;
+        border-right: 2rem solid transparent;
+        
+        display: block;
+
+        height: auto;
+        width: auto;
+
+        position: absolute;
+        left: 0;
+    }
+
     .masthead {
         flex-direction: column;
 
@@ -130,6 +151,11 @@
         .header__inner {
             top: 0;
         }
+    }
+
+    .corner {
+        border-top: 4rem solid white;
+        border-right: 4rem solid transparent;
     }
 
     .profile, .content {
