@@ -10,6 +10,8 @@
     align-items: baseline;
     justify-content: space-around;
 
+    font-family: var(--heading-font);
+
     margin-bottom: 1rem;
 
     position: relative;
@@ -51,6 +53,8 @@
 
 .sectionHeader {
     border-bottom: solid 2px #363636;
+
+    font-family: var(--heading-font);
 }
 
 .skills {

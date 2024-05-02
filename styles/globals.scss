@@ -88,6 +88,14 @@ article {
     }
 }
 
+address {
+    font-style: normal;
+
+    a:hover{
+        font-style: italic;
+    }
+}
+
 input,
 textarea {
     border: none;

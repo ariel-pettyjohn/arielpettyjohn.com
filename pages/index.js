@@ -1,7 +1,5 @@
 import Head from 'next/head';
 
-import { getCurrentYear } from '../util';
-
 import Resume from '../components/Resume/Resume';
 
 import resume from '../content/resume';
