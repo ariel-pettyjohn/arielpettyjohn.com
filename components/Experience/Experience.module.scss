@@ -1,0 +1,12 @@
+.experience {
+    border-bottom: solid 2px;
+
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    &:last-child {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+}
