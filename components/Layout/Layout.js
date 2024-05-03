@@ -7,13 +7,14 @@ import { Roboto_Slab as TextFont } from "next/font/google";
 import styles from "./Layout.module.scss";
 
 const headingFont = HeadingFont({
-    weight  : "400",
+    weight  : ["400", "700"],
     subsets : ["latin"],
+    style   : ["normal", "italic"],
     variable: "--heading-font"
 });
 
 const textFont = TextFont({
-    weight  : "400",
+    weight  : ["400", "700"],
     subsets : ["latin"],
     variable: "--text-font"
 });
