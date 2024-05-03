@@ -58,6 +58,8 @@ export default function Resume ({
                     </section>
 
                     <section className={styles.education}>
+                        <span className={styles.corner}></span>
+
                         <header className={styles.sectionHeader}>
                             <h2 className="h5">Education</h2>
                         </header>

@@ -23,9 +23,7 @@
 }
 
 .sectionHeader {
-    border-bottom: solid 2px #363636;
-
-    padding-bottom: 0.25rem;
+    /*border-bottom: solid 2px #363636;*/
 
     font-family: var(--heading-font);
 }
@@ -36,7 +34,25 @@
 
 .experience { display: block; }
 
-.education { display: block; }
+.education { 
+    display: block; 
+
+    background: #e1eaf3;
+    padding: 1rem;
+
+    margin: 0 1rem 1rem;
+
+    position: relative;
+
+    .corner {
+        border-top: 2rem solid white;
+        border-left: 2rem solid transparent;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
 
 @media (min-width: breakpoints.$mobile) {     
     .Resume {
@@ -61,6 +77,10 @@
     .skills {
         width: 100%;
         margin: 0;
+    }
+
+    .education {
+        margin: 0 0 1rem;
     }
 }
 
@@ -94,7 +114,7 @@
     }
 
     .sectionHeader {
-        border-bottom: solid 3px #363636;
+        /*border-bottom: solid 3px #363636;*/
 
         
         width: fit-content;
