@@ -40,7 +40,7 @@
     background: #e1eaf3;
     padding: 1rem;
 
-    margin: 0 1rem 1rem;
+    margin: 0 1rem 2rem;
 
     position: relative;
 
@@ -67,7 +67,7 @@
 
     .profile {
         width: calc(62% - 1rem);
-        margin-left: 1rem;
+        margin: 0 0 0 1rem;
     }
 
 	.photo {
@@ -80,7 +80,7 @@
     }
 
     .education {
-        margin: 0 0 1rem;
+        margin: 0 0 2rem;
     }
 }
 
@@ -95,12 +95,12 @@
     }
 
     .introduction {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
     .profile, .content {
         width: calc(62% - 2rem);
-        margin-left: 2rem;
+        margin: 0 0 0 2rem;
     }
 
     .photo {
@@ -115,6 +115,10 @@
 
     .sectionHeader {
         width: fit-content;
+    }
+
+    .skills, .experience {
+        padding-top: 2rem;
     }
 
     .skills {

@@ -89,11 +89,11 @@ header {
 
 aside, section {
     padding: 0 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 article {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     
     &:last-child {
         margin-bottom: 0;
@@ -124,7 +124,6 @@ textarea {
     }
 
     aside, section {
-        margin-bottom: 1rem;
         padding: 0;
     }    
 }
