@@ -13,6 +13,10 @@
     width: 1rem;
 }
 
+.Contact a .text:hover {
+    font-style: italic;
+}
+
 @media (min-width: 576px) {
     .Contact {
         flex-direction: column;

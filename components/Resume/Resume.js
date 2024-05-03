@@ -1,4 +1,4 @@
-import Contact    from '../Contact/Contact';
+import Header     from '../Header/Header';
 import Summary    from '../Summary/Summary';
 import Skills     from '../Skills/Skills';
 import Experience from '../Experience/Experience';
@@ -21,24 +21,13 @@ export default function Resume ({
     return (
         <main className={styles.Resume}>
             <div className={styles.introduction}>
-                <header className={styles.header}>
-                    <small className={styles.corner}></small>
-                    
-                    <div className={styles.header__inner}>
-                        <h1 className={`h3 ${styles.masthead}`}>
-                            <span>{firstName} {lastName}</span>
-
-                            <span className={styles.separator}>|</span>
-                            
-                            <span className="h4">{title}</span>
-                        </h1>
-
-                        <Contact 
-                            location        = {location}
-                            pointsOfContact = {pointsOfContact}
-                        />
-                    </div>
-                </header>
+                <Header 
+                    firstName       = {firstName}
+                    lastName        = {lastName}
+                    title           = {title}
+                    location        = {location}
+                    pointsOfContact = {pointsOfContact}
+                />
 
                 <section className={styles.profile}>
                     <img className={styles.photo} 
