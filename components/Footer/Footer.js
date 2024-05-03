@@ -8,7 +8,7 @@ export default function Footer () {
     return (
         <footer className={styles.Footer}>
             <section className={styles.getInTouch}>
-                <header className={styles.sectionHeader}>
+                <header>
                     <h2 className="h5">Get in Touch</h2>
                 </header>
                 

@@ -25,6 +25,8 @@
 .sectionHeader {
     border-bottom: solid 2px #363636;
 
+    padding-bottom: 0.25rem;
+
     font-family: var(--heading-font);
 }
 
@@ -93,6 +95,9 @@
 
     .sectionHeader {
         border-bottom: solid 3px #363636;
+
+        
+        width: fit-content;
     }
 
     .skills {
