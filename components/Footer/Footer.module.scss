@@ -45,7 +45,9 @@
 
 @media (min-width: breakpoints.$laptop) {
     .Footer {
-        min-height: calc(100vh - 3rem);
+        min-height: calc(100vh - 5rem);
+
+        padding: 4rem 2rem 1rem;
 
         .getInTouch {
             width: 62%;

@@ -114,9 +114,6 @@
     }
 
     .sectionHeader {
-        /*border-bottom: solid 3px #363636;*/
-
-        
         width: fit-content;
     }
 
@@ -133,5 +130,9 @@
 
         margin-right: 2rem;
         width: calc(38% - 2rem);
+    }
+
+    .education {
+        margin: 0;
     }
 }
