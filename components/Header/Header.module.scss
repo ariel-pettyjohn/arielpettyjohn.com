@@ -24,11 +24,15 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
-            justify-content: space-around;
+            justify-content: center;
 
-            font-size: var(--h3);
+            font-size: 1.2rem;
         
             margin-bottom: 1rem;
+
+            .separator {
+                margin: 0 0.5rem;
+            }
         }
     }
 }
@@ -66,6 +70,8 @@
         
             .masthead {
                 flex-direction: column;
+
+                font-size: var(--h3);
         
                 word-spacing: 9999px;
 
