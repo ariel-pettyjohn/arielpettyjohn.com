@@ -6,13 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    padding: 0 1rem;
+    padding: 1rem;
 
-    position: relative;
-
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem);
     width: calc(100% - 2rem);
 
     .getInTouch {
@@ -24,24 +22,26 @@
 
     .copyright {
         font-size: 12px;
-
-        position: absolute;
-        bottom: 0.5rem;
     }
 }
 
 @media (min-width: breakpoints.$mobile) {     
     .Footer {
-        padding: 0 2rem;;
+        padding: 2rem 2rem 1rem;
+        
+        min-height: calc(100vh - 5rem);
+        
         width: calc(100% - 4rem);
+
+        .getInTouch {
+            margin-bottom: 2rem;
+        }
     }
 }
 
 @media (min-width: breakpoints.$laptop) {
     .Footer {
-        padding: 0;
-        
-        width: 100%;    
+        min-height: calc(100vh - 3rem);
 
         .getInTouch {
             width: 62%;
