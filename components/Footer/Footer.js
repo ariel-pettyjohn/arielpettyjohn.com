@@ -7,7 +7,13 @@ import styles from "./Footer.module.scss";
 export default function Footer () {
     return (
         <footer className={styles.Footer}>
-            <ContactForm />
+            <section className={styles.getInTouch}>
+                <header className={styles.sectionHeader}>
+                    <h2 className="h5">Get in Touch</h2>
+                </header>
+                
+                <ContactForm />
+            </section>
             
             <span className={styles.copyright}>
                 Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
