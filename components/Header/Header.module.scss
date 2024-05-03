@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints.scss";
+
 .Header {
     background: #e1eaf3;
     
@@ -7,7 +9,7 @@
 
     font-family: var(--heading-font);
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     position: relative;
 
@@ -23,13 +25,15 @@
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-around;
+
+            font-size: var(--h3);
         
             margin-bottom: 1rem;
         }
     }
 }
 
-@media (min-width: 576px) {     
+@media (min-width: breakpoints.$mobile) {     
     .Header {
         display: flex;
         flex-direction: column;
@@ -68,12 +72,16 @@
                 .separator {
                     display: none;
                 }
+
+                .title {
+                    font-size: var(--h4);
+                }
             }
         }
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: breakpoints.$laptop) {
     .Header {
         margin: 0 2rem 0 0;
 

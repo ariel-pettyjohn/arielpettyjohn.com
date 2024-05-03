@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints.scss";
+
 .Contact {
     display: flex;
     justify-content: space-evenly;
@@ -17,7 +19,7 @@
     font-style: italic;
 }
 
-@media (min-width: 576px) {
+@media (min-width: breakpoints.$mobile) {
     .Contact {
         flex-direction: column;
         align-items: flex-end;

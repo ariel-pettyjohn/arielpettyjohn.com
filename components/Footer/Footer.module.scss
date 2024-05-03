@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints.scss";
+
 .Footer {
     background-color: #cfd4d8;
 
@@ -18,14 +20,14 @@
     }
 }
 
-@media (min-width: 576px) {     
+@media (min-width: breakpoints.$mobile) {     
     .Footer {
         padding: 0 2rem;;
         width: calc(100% - 4rem);
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: breakpoints.$laptop) {
     .Footer {
         padding: 0;
         

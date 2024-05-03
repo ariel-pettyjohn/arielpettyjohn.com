@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints.scss";
+
 .introduction {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
 .photo {
     display: block;
 	width: calc(62%);
-	margin: 0 auto 1rem;
+	margin: 0 auto 2rem;
 }
 
 .main {
@@ -34,7 +36,7 @@
 
 .education { display: block; }
 
-@media (min-width: 576px) {     
+@media (min-width: breakpoints.$mobile) {     
     .Resume {
         padding: 2rem;
     }
@@ -60,7 +62,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: breakpoints.$laptop) {
     .Resume {
         max-width: 1440px;
 

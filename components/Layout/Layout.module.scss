@@ -1,10 +1,12 @@
+@use "../../styles/breakpoints.scss";
+
 .container {
     font-family: var(--text-font);
     position: relative;
     top: 2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: breakpoints.$laptop) {
     .container {
         top: 0;
     }

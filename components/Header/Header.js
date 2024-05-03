@@ -14,12 +14,12 @@ export default function Header({
             <small className={styles.corner}></small>
             
             <div className={styles.inner}>
-                <h1 className={`h3 ${styles.masthead}`}>
+                <h1 className={styles.masthead}>
                     <span>{firstName} {lastName}</span>
 
-                    <span className={styles.separator}>|</span>
+                    <span className={styles.separator}>/</span>
                     
-                    <span className="h4">{title}</span>
+                    <span className={styles.title}>{title}</span>
                 </h1>
 
                 <Contact 
