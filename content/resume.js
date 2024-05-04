@@ -38,31 +38,31 @@ const resume = {
     ],
     skillsets: [{
         category: <>Management:</>,
-        skills  : <>Agile, Scrum, Extreme Programming.</>
+        skills  : <>Agile, Scrum, Extreme Programming</>
     }, {
         category: <>Processes:</>,
-        skills  : <>Root Cause Analysis, Six Sigma, Process Engineering, Product Development.</>    
+        skills  : <>Root Cause Analysis, Six Sigma, Process Engineering, Product Development</>    
     }, {
         category: <>Languages:</>,
-        skills  : <>JavaScript, TypeScript, HTML5/CSS3, Python, Shell, PHP, Scheme, Java.</>
+        skills  : <>JavaScript, TypeScript, HTML5/CSS3, Python, Shell, PHP, Scheme, Java</>
     }, {
         category: <>Libraries:</>,
-        skills  : <>Node.js, React, Redux, Express, Sass, Vue.</>
+        skills  : <>Node.js, React, Redux, Express, Sass, Vue</>
     }, {
         category: <>Frameworks:</>,
-        skills  : <>Next.js, Laravel, Django.</>
+        skills  : <>Next.js, Laravel, Django</>
     }, {
         category: <>Testing:</>,
-        skills  : <>Cypress, Enzyme, Jest.</>
+        skills  : <>Cypress, Enzyme, Jest</>
     }, {
         category: <>Databases:</>,
-        skills  : <>Firebase, MySQL, Redis, RDF.</>
+        skills  : <>Firebase, MySQL, Redis, RDF</>
     }, {
         category: <>Source Control:</>,
-        skills  : <>Git, Subversion, Mercurial, Bazaar.</>
+        skills  : <>Git, Subversion, Mercurial, Bazaar</>
     }, {
         category: <>DevOps:</>,
-        skills  : <>Apache, AWS, Circle CI, Docker, Linux.</>
+        skills  : <>Apache, AWS, Circle CI, Docker, Linux</>
     }],
     experiences: [{
         role      : "Solutions Architect",
