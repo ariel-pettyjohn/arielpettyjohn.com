@@ -20,52 +20,54 @@ export default function Resume ({
 }) {
     return (
         <main className={styles.Resume}>
-            <div className={styles.introduction}>
-                <Header 
-                    firstName       = {firstName}
-                    lastName        = {lastName}
-                    title           = {title}
-                    location        = {location}
-                    pointsOfContact = {pointsOfContact}
-                />
-
-                <section className={styles.profile}>
-                    <img className={styles.photo} 
-                        src = {photo} 
-                        alt = {`${firstName} ${lastName}`}
+            <div className={styles.inner}>
+                <div className={styles.introduction}>
+                    <Header 
+                        firstName       = {firstName}
+                        lastName        = {lastName}
+                        title           = {title}
+                        location        = {location}
+                        pointsOfContact = {pointsOfContact}
                     />
 
-                    <Summary summary={summary} />
-                </section>
-            </div>
+                    <section className={styles.profile}>
+                        <img className={styles.photo} 
+                            src = {photo} 
+                            alt = {`${firstName} ${lastName}`}
+                        />
 
-            <div className={styles.main}>
-                <aside className={styles.skills}>
-                    <header className={styles.sectionHeader}>
-                        <h2 className="h5">Skills</h2>
-                    </header>
-
-                    <Skills skillsets={skillsets} />
-                </aside>
-
-                <div className={styles.content}>
-                    <section className={styles.experience}>
-                        <header className={styles.sectionHeader}>
-                            <h2 className="h5">Experience</h2>
-                        </header>
-                        
-                        <Experience experiences={experiences} />
+                        <Summary summary={summary} />
                     </section>
+                </div>
 
-                    <section className={styles.education}>
-                        <span className={styles.corner}></span>
-
+                <div className={styles.main}>
+                    <aside className={styles.skills}>
                         <header className={styles.sectionHeader}>
-                            <h2 className="h5">Education</h2>
+                            <h2 className="h5">Skills</h2>
                         </header>
-                        
-                        <Education education={education} />
-                    </section>
+
+                        <Skills skillsets={skillsets} />
+                    </aside>
+
+                    <div className={styles.content}>
+                        <section className={styles.experience}>
+                            <header className={styles.sectionHeader}>
+                                <h2 className="h5">Experience</h2>
+                            </header>
+                            
+                            <Experience experiences={experiences} />
+                        </section>
+
+                        <section className={styles.education}>
+                            <span className={styles.corner}></span>
+
+                            <header className={styles.sectionHeader}>
+                                <h2 className="h5">Education</h2>
+                            </header>
+                            
+                            <Education education={education} />
+                        </section>
+                    </div>
                 </div>
             </div>
         </main>

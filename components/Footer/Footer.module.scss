@@ -13,6 +13,13 @@
     min-height: calc(100vh - 5rem);
     width: calc(100% - 2rem);
 
+    z-index: -1;
+
+    @media (orientation: portrait), (min-width: breakpoints.$laptop) {
+        position: fixed;
+        bottom: 0;
+    }
+
     .getInTouch {
         display: flex;
         flex-direction: column;
@@ -28,6 +35,7 @@
         font-size: 12px;
     }
 }
+
 
 @media (min-width: breakpoints.$mobile) {     
     .Footer {
