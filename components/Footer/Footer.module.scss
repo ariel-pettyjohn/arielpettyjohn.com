@@ -15,7 +15,8 @@
 
     z-index: -1;
 
-    @media (orientation: portrait), (min-width: breakpoints.$laptop) {
+    @media (orientation: portrait), 
+        (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
         position: fixed;
         bottom: 0;
     }

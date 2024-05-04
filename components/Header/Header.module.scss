@@ -11,7 +11,10 @@
 
     margin-bottom: 2rem;
 
-    position: relative;
+    position: sticky;
+    top: 2rem;
+    z-index: 0;
+    margin-bottom: 0;
 
     .corner {
         display: none;
@@ -19,6 +22,9 @@
 
     .inner {
         padding: 1rem;
+
+        max-width: fit-content;
+        margin: 0 auto;
 
         .masthead {
             display: flex;
@@ -43,6 +49,9 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
+
+        position: relative;
+        top: 0;
 
         text-align: right;
 

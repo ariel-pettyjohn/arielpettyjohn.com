@@ -5,9 +5,18 @@
 
     border-bottom: solid 2px #6a747d;
 
-    @media (orientation: portrait), (min-width: breakpoints.$laptop) {
+    @media (orientation: portrait), 
+        (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
         margin-bottom: 100vh;
     }
+}
+
+.profile {
+    padding-top: 2rem;
+    background: white;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
 }
 
 .introduction {
@@ -76,6 +85,7 @@
     .profile {
         width: calc(62% - 1rem);
         margin: 0 0 0 1rem;
+        padding-bottom: 0;
     }
 
 	.photo {
