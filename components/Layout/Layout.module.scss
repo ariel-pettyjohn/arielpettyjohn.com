@@ -4,6 +4,7 @@
     font-family: var(--text-font);
     position: relative;
     top: 2rem;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 @media (min-width: breakpoints.$laptop) {
