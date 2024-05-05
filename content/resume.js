@@ -86,7 +86,7 @@ const resume = {
         location  : "Redmond, WA",
         highlights: [
             <>Led front-end engineering and testing of financial products used in over 1,700 stores nationwide</>,
-            <>Interviewed, trained, and mentored a diverse software development team, and advocated for an organizational commitment to career development</>,
+            <>Interviewed, trained, and mentored a diverse software engineering team, and advocated for an organizational commitment to career development</>,
             <>Integrated analytics to track customer journey across suite of 5 applications, and aggregated data into summary reports for white label partners</>,
             <>Spearheaded development of internal best practices, wrote documentation, and created training modules, which cut the training time for junior engineers by 50%</>,
             <>Collaborated with groups of designers, product developers, and data architects to anticipate front-end API needs weeks earlier</>,

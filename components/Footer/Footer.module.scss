@@ -6,20 +6,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     padding: 2rem 1rem 1rem;
 
-    min-height: calc(100vh - 5rem);
+    /*min-height: calc(100vh - 5rem);*/
     width: calc(100% - 2rem);
 
     z-index: -1;
 
+    
     @media (orientation: portrait), 
         (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
         position: fixed;
         bottom: 0;
     }
+    
+    
+    /*
+    position: fixed;
+    bottom: 0;
+    */
 
     .getInTouch {
         display: flex;
@@ -42,7 +49,7 @@
     .Footer {
         padding: 2rem 2rem 1rem;
         
-        min-height: calc(100vh - 5rem);
+        /*min-height: calc(100vh - 5rem);*/
         
         width: calc(100% - 4rem);
 
@@ -54,7 +61,7 @@
 
 @media (min-width: breakpoints.$laptop) {
     .Footer {
-        min-height: calc(100vh - 5rem);
+        /*min-height: calc(100vh - 5rem);*/
 
         padding: 4rem 2rem 1rem;
 

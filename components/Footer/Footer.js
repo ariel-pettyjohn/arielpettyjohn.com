@@ -1,12 +1,14 @@
+import { forwardRef } from "react";
+
 import ContactForm from "../ContactForm/ContactForm";
 
 import { getCurrentYear } from '../../util';
 
 import styles from "./Footer.module.scss";
 
-export default function Footer () {
+const Footer = forwardRef((_, ref) => {
     return (
-        <footer className={styles.Footer}>
+        <footer className={styles.Footer} ref={ref}>
             <section className={styles.getInTouch}>
                 <header>
                     <h2 className="h5">Get in Touch</h2>
@@ -20,4 +22,6 @@ export default function Footer () {
             </span>
         </footer>
     );
-}
+});
+
+export default Footer;
