@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: breakpoints.$laptop) {
+@media (min-width: breakpoints.$laptop), (orientation: landscape) {
     .downloadPDF {
         border-top: 100px solid #6a747d;
         border-left: 100px solid transparent;

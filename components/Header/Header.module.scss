@@ -76,6 +76,9 @@
         .inner {
             position: sticky;
             top: 2rem;
+
+            max-width: none;
+            margin: 0;
         
             .masthead {
                 flex-direction: column;

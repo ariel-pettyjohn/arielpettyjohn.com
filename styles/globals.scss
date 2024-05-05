@@ -111,6 +111,14 @@ address {
     font-style: normal;
 }
 
+input {
+    border-radius: 0;
+}
+
+input[type="search"] {
+    appearance: none;
+}
+
 input,
 textarea {
     border: none;
@@ -147,9 +155,14 @@ textarea {
     }
 }
 
-@media (min-width: breakpoints.$laptop) {
+@media (min-width: breakpoints.$laptop), (orientation: landscape) {
     :root {
         --layout-offset: 0rem;
+    }
+}
+
+@media (min-width: breakpoints.$laptop) {
+    :root {
         --h1: 3.815rem;
         --h2: 3.052rem;
         --h3: 2.441rem;
