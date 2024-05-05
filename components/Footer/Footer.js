@@ -7,7 +7,7 @@ import { getCurrentYear } from '../../util';
 import styles from "./Footer.module.scss";
 
 export default function Footer () {
-    return forwardRef((_, ref) => {
+    return forwardRef(function (_, ref) {
         return (
             <footer className={styles.Footer} ref={ref}>
                 <section className={styles.getInTouch}>
