@@ -111,20 +111,17 @@ address {
     font-style: normal;
 }
 
-input {
+input,
+textarea {
+    border: none;
     border-radius: 0;
+    outline: none;
+    
+    padding: 0.5rem;
 }
 
 input[type="search"] {
     appearance: none;
-}
-
-input,
-textarea {
-    border: none;
-    outline: none;
-    
-    padding: 0.5rem;
 }
 
 @media (min-width: breakpoints.$mobile) {
