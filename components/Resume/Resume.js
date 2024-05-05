@@ -16,11 +16,10 @@ export default function Resume ({
     summary, 
     skillsets, 
     experiences, 
-    education,
-    //style
+    education
 }) {
     return (
-        <main className={styles.Resume} /*style={style}*/>
+        <main className={styles.Resume}>
             <div className={styles.inner}>
                 <div className={styles.introduction}>
                     <Header 

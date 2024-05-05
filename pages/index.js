@@ -28,7 +28,7 @@ export default function Home() {
                 </a>
             </small>
 
-            <Resume style={{/* marginBottom: `calc(var(--footer-height) + var(--layout-offset))` */}} {...resume} />
+            <Resume {...resume} />
         </>
     );
 }

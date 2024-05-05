@@ -3,8 +3,7 @@ export default function Education ({ education }) {
         major, 
         startDate, 
         endDate, 
-        school, 
-        location 
+        school
     }) =>
         <article key={major}>
             <h3 className="h6">

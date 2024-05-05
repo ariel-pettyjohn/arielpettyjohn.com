@@ -16,7 +16,6 @@ export default function Experience ({ experiences }) {
                     {employer}, {startDate} &ndash; {endDate ?? "Present"}
                 </span>
             </header>
-            
 
             <ul>
                 {highlights.map((highlight, index) => 

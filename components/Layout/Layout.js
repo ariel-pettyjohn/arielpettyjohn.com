@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import Footer from "../Footer/Footer";
 
@@ -21,41 +21,22 @@ const textFont = TextFont({
     variable: "--text-font"
 });
 
-export default function Layout({ Page, props/*: _props*/ }) {
+export default function Layout({ Page, props }) {
     const footerRef = useRef();
 
-    //const [footerHeight, setFooterHeight] = useState(0);
-    
-    //calc(var(--footer-height) + var(--layout-offset))
+    const updateMainOffset = () => document.documentElement.style.setProperty(
+        '--main-offset', 
+        `calc(${footerRef.current.scrollHeight}px + var(--layout-offset))`
+    );
 
     useEffect(() => {
-        document.documentElement.style.setProperty(
-            '--main-offset', 
-            `calc(${footerRef.current.scrollHeight}px + var(--layout-offset))`
-        );
-        /*
-        document.documentElement.style.setProperty(
-            '--footer-height', 
-            `${footerRef.current.scrollHeight}px`
-        );
-        */
-        //setFooterHeight(footerRef.current.scrollHeight);
+        updateMainOffset();
     }, [footerRef.current]);
 
     useEffect(() => {
-        const foo = window.addEventListener("resize", () => {
-            document.documentElement.style.setProperty(
-                '--main-offset', 
-                `calc(${footerRef.current.scrollHeight}px + var(--layout-offset))`
-            );
-            /*
-            document.documentElement.style.setProperty(
-                '--footer-height', 
-                `${footerRef.current.scrollHeight}px`
-            );
-            */
-        });
-        return () => foo;
+        const handleResize 
+            = window.addEventListener("resize", () => updateMainOffset());
+        return () => handleResize;
     }, []);
 
     const className = `
@@ -64,10 +45,6 @@ export default function Layout({ Page, props/*: _props*/ }) {
         ${headingFont.variable}
     `;
 
-    //console.log(footerHeight)
-
-    //const props = { marginBottom: footerHeight, ..._props };
-        
     return (
         <div className={className}>
             <Page {...props} />
