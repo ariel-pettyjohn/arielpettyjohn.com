@@ -24,18 +24,18 @@ const textFont = TextFont({
 export default function Layout({ Page, props }) {
     const footerRef = useRef();
 
-    const updateMainOffset = () => document.documentElement.style.setProperty(
-        '--main-offset', 
-        `calc(${footerRef.current.scrollHeight}px + var(--layout-offset))`
+    const updateResumeMargin = () => document.documentElement.style.setProperty(
+        '--resume-marginTop', 
+        `calc(${footerRef.current.scrollHeight}px + var(--page-marginTop))`
     );
 
     useEffect(() => {
-        updateMainOffset();
+        updateResumeMargin();
     }, [footerRef.current]);
 
     useEffect(() => {
         const handleResize 
-            = window.addEventListener("resize", () => updateMainOffset());
+            = window.addEventListener("resize", () => updateResumeMargin());
         return () => handleResize;
     }, []);
 

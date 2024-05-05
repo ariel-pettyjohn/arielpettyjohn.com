@@ -7,7 +7,7 @@
 
     @media (orientation: portrait), 
         (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
-        margin-bottom: var(--main-offset);
+        margin-bottom: var(--resume-marginTop);
     }
 }
 
