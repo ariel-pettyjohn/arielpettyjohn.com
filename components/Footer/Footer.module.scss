@@ -17,7 +17,7 @@
 
     padding: 2rem calc(1rem + env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) calc(1rem + env(safe-area-inset-left));
 
-    width: calc(100% - 2rem);
+    width: calc(100% - calc(1rem + env(safe-area-inset-right)) - calc(1rem + env(safe-area-inset-left)));
 
     z-index: -1;
 
@@ -48,6 +48,8 @@
 @media (min-width: breakpoints.$laptop) {
     .Footer {
         padding: 4rem calc(2rem + env(safe-area-inset-right)) calc(4rem + env(safe-area-inset-bottom)) calc(2rem + env(safe-area-inset-left));
+
+        width: calc(100% - calc(2rem + env(safe-area-inset-right)) - calc(2rem + env(safe-area-inset-left)));
 
         .getInTouch {
             width: 62%;
