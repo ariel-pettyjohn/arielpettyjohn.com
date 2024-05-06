@@ -137,16 +137,16 @@ const resume = {
         employer  : "1stMILE",
         location  : "Redmond, WA",
         highlights: [
-            <>Led front-end engineering and testing of financial products used in over 1,700 stores nationwide</>,
-            <>Interviewed, trained, and mentored a diverse software engineering team, and advocated for an organizational commitment to career development</>,
-            <>Integrated analytics to track customer journey across suite of 5 applications, and aggregated data into summary reports for white label partners</>,
-            <>Spearheaded development of internal best practices, wrote documentation, and created training modules, which cut the training time for junior engineers by 50%</>,
-            <>Collaborated with groups of designers, product developers, and data architects to anticipate front-end API needs weeks earlier</>,
-            <>Liaised with executives to coordinate integration of credit applications and onboard 4 key strategic partners</>,
-            <>Re-architected credit application integrations, which improved developer productivity by 4x</>,
-            <>Implemented a consistent component architecture, which reduced code duplication by 20%</>,
-            <>Refactored flagship web application, which eliminated 50% of unnecessary code</>,
-            <>Abstracted automation scripts to simplify deployment workflow, which saved 10+ hours of development per week</>
+            "Led front-end engineering and testing of financial products used in 1,700 stores nationwide",
+            "Interviewed, trained, and mentored a diverse software engineering team, and advocated for an organizational commitment to career development",
+            "Integrated analytics to track customer journey across suite of 5 applications, and aggregated data into summary reports for white label partners",
+            "Spearheaded development of internal best practices, wrote documentation, and created training modules, reducing training time for junior engineers by 50%",
+            "Collaborated with groups of designers, product developers, and data architects to anticipate front-end API needs",
+            "Coordinated with executives to coordinate integration of credit applications and onboard 4 key strategic partners",
+            "Re-architected credit application integrations, improving developer productivity by 4x",
+            "Implemented a consistent component architecture, reducing cross-application code duplication by 20%",
+            "Refactored flagship web application, eliminating 50% of unnecessary code",
+            "Abstracted Bash automation scripts to simplify deployment workflow, saving 10+ hours of development time per week"
         ]
     }, {
         role      : "Senior Web Developer",
@@ -155,12 +155,12 @@ const resume = {
         employer  : "DBS Interactive",
         location  : "Louisville, KY",
         highlights: [
-            <>Directed front-end development of content management systems for over a dozen clients</>,
-            <>Crafted infographics for brands including Maker&apos;s Mark and The Kentucky Derby, which increased traffic to primary domains by 65% &ndash; 75% on launch</>,
-            <>Managed Big Ass Fans&apos; ecommerce migration, which limited storefront load times by 10%</>,
-            <>Engineered the first ecommerce storefront for the Holiday World theme park</>,
-            <>Wrote PHP scripts to re-engineer the e-blast workflow for Humana, which increased turnaround 5x</>,
-            <>Launched microsite to unveil the first launched wing roller coaster in the U.S.</>
+            "Directed front-end development of websites and CMS integration for clients including Hensley Manufacturing, Stonestreet Farms, and The Voice-Tribune newspaper",
+            <>Crafted infographics for brands including Maker&apos;s Mark and The Kentucky Derby, increasing traffic to their respective primary domains by 70% on launch</>,
+            <>"Managed Big Ass Fans&apos; ecommerce migration to Magento, reducing storefront load times by 10%"</>,
+            "Engineered first ecommerce storefront for Holiday World theme park",
+            "Wrote custom PHP script to inline CSS for Big Ass Fans and Humana eblasts, increasing turnaround 5x",
+            "Launched Holiday World microsite to unveil first launched wing roller coaster in U.S"
         ]
     }],
     education: [{
