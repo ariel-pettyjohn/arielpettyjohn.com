@@ -28,9 +28,15 @@
     }
 }
 
+@function translucent ($r, $g, $b) {
+    $min: min($r, $g, $b);
+    $alpha: (255 - $min) / 255;
+    @return rgba($r - $min, $g - $min, $b - $min, $alpha);
+}
+
 @media (min-width: breakpoints.$laptop), (orientation: landscape) {
     .downloadPDF {
-        border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid #6a747d;
+        border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid translucent(106, 116, 125);
         border-left: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid transparent;
         position: fixed;
         right: 0;
@@ -55,7 +61,7 @@
 
         &:hover {
             background-color: transparent;
-            border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid #505A5E;
+            border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid translucent(80, 90, 94);
         }
     }
 }
