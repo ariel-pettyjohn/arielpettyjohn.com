@@ -72,7 +72,7 @@ const resume = {
         location  : "Seattle, WA",
         isAgency  : true,
         highlights: [{
-            client: "Computational Biology Research Lab at Indiana University Bloomington",
+            client: "Computational Biology Research Lab at Indiana University",
             achievements: [
                 "Built models to compare behavior of Gaussian vs. uniform noise in high-dimensional space",
                 "Mined PubMed data in order to augment then limited API",
