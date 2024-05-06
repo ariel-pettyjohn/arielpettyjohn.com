@@ -1,6 +1,8 @@
 @use "../../styles/breakpoints.scss";
 
 .Resume {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left);
+
     background-color: white;
 
     border-bottom: solid 2px #6a747d;
@@ -74,7 +76,7 @@
 
 @media (min-width: breakpoints.$mobile) {     
     .Resume {
-        padding: 2rem;
+        padding: calc(2rem + env(safe-area-inset-top)) calc(2rem + env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) calc(2rem + env(safe-area-inset-left));
     }
     
     .introduction {
@@ -108,6 +110,8 @@
 @media (min-width: breakpoints.$laptop) {
     .Resume {
         padding: 4rem 0;
+
+        padding: calc(4rem + env(safe-area-inset-top)) env(safe-area-inset-right) 4rem env(safe-area-inset-left);
 
         .inner {
             margin: 0 auto;
