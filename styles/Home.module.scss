@@ -31,7 +31,7 @@
 @media (min-width: breakpoints.$laptop), (orientation: landscape) {
     .downloadPDF {
         border-top: calc(100px + env(safe-area-inset-right)) solid #6a747d;
-        border-left: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid transparent;
+        border-left: calc(100px + env(safe-area-inset-right)) solid transparent;
         position: fixed;
         right: 0;
         z-index: 9999;
