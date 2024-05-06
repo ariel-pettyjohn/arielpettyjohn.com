@@ -9,4 +9,20 @@
         margin: 0;
         padding: 0;
     }
+
+    .agencyHighlights {
+        list-style-type: none;
+
+        padding-left: 0;
+
+        .agencyHighlight {
+            dd {
+                margin: 0;
+            }
+            
+            .agencyAchievements {
+                list-style-type: disc;            
+            }
+        }
+    }
 }

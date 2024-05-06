@@ -6,7 +6,8 @@ export default function Experience ({ experiences }) {
         startDate, 
         endDate, 
         employer, 
-        highlights 
+        highlights,
+        isAgency = false
     }) =>
         <article className={styles.experience} key={role}>
             <header>
@@ -17,8 +18,21 @@ export default function Experience ({ experiences }) {
                 </span>
             </header>
 
-            <ul>
-                {highlights.map((highlight, index) => 
+            <ul className={isAgency ? styles.agencyHighlights : null}>
+                {isAgency ? highlights.map((highlight, index) => 
+                    <li className={styles.agencyHighlight}>
+                        <dl key={index}>
+                            <dt>{highlight.client}</dt> 
+                            <dd>
+                                <ul className={styles.agencyAchievements}>
+                                    {highlight.achievements.map((achievement) =>
+                                        <li>{achievement}</li>
+                                    )}
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                ) : highlights.map((highlight, index) => 
                     <li key={index}>
                         {highlight}
                     </li>

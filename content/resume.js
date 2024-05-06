@@ -37,31 +37,31 @@ const resume = {
         <>In business {yearsOfExperience} years as an entrepreneur and freelance engineer, managing connections with subcontractors and vendors</>
     ],
     skillsets: [{
-        category: <>Management:</>,
+        category: <>Management</>,
         skills  : <>Agile, Scrum, Extreme Programming</>
     }, {
-        category: <>Processes:</>,
+        category: <>Processes</>,
         skills  : <>Root Cause Analysis, Six Sigma, Process Engineering, Product Development</>    
     }, {
-        category: <>Languages:</>,
+        category: <>Languages</>,
         skills  : <>JavaScript, TypeScript, HTML5/CSS3, Python, Shell, PHP, Scheme, Java</>
     }, {
-        category: <>Libraries:</>,
+        category: <>Libraries</>,
         skills  : <>Node.js, React, Redux, Express, Sass, Vue</>
     }, {
-        category: <>Frameworks:</>,
+        category: <>Frameworks</>,
         skills  : <>Next.js, Laravel, Django</>
     }, {
-        category: <>Testing:</>,
+        category: <>Testing</>,
         skills  : <>Cypress, Enzyme, Jest</>
     }, {
-        category: <>Databases:</>,
+        category: <>Databases</>,
         skills  : <>Firebase, MySQL, Redis, RDF</>
     }, {
-        category: <>Source Control:</>,
+        category: <>Source Control</>,
         skills  : <>Git, Subversion, Mercurial, Bazaar</>
     }, {
-        category: <>DevOps:</>,
+        category: <>DevOps</>,
         skills  : <>Apache, AWS, Circle CI, Docker, Linux</>
     }],
     experiences: [{
@@ -70,14 +70,66 @@ const resume = {
         endDate   : null,
         employer  : "Web Architecture Solutions",
         location  : "Seattle, WA",
-        highlights: [
-            <>Researched AI/ML and published technical presentation with the Internet Ontology Project at Indiana University</>,
-            <>Delivered microsite to unveil Eurofins&apos; oligonucleotide synthesis technology, which drove 35% more traffic to the primary site on launch</>,
-            <>Performed comprehensive content, performance, and SEO audits across the Eurofins portfolio of sites, which sped up content development time by 10%, improved load times by 20%, and lifted placement in organic search results</>,
-            <>Developed proposals for brands including Four Roses Bourbon to demonstrate possible opportunities and use-cases of user-generated content</>,
-            <>Maintained CRM system for corporate segment of Waste Management&apos;s &gt; 20 million customers</>,
-            <>Built a fundraising portal for The Salvation Army that helped boost donations by 15% that year</>
-        ]
+        isAgency  : true,
+        highlights: [{
+            client: "Computational Biology Research Lab at Indiana University Bloomington",
+            achievements: [
+                "Built models to compare behavior of Gaussian vs. uniform noise in high-dimensional space",
+                "Mined PubMed data in order to augment then limited API",
+                "Implemented algorithm to rank academic departments by relevant citation count"
+            ]
+        }, {
+            client: "Eurofins Genomics",
+            achievements: [
+                "Delivered microsite to unveil oligonucleotide synthesis technology, driving 35% more traffic to primary site on launch",
+                "Performed comprehensive content and SEO audits across portfolio of sites, reducing content development time by 10% and lifting placement in organic search results",
+                "Conducted performance audit for genomics website, reducing page load times by 20%",
+            ]
+        }, {
+            client: "Four Roses Bourbon",
+            achievements: [
+                "Developed proposal to demonstrate possible opportunities and use-cases of user-generated content"
+            ]
+        }, {
+            client: "Galen College of Nursing",
+            achievements: [
+                "Engineered custom intranet using Joomla and LDAP to automatically generate user groups and synchronize authenticated users between Active Directory and CMS"
+            ]
+        }, {
+            client: "General Electric",
+            achievements: [
+                "Developed strategic partner microsites for Home Depot and Pillsbury",
+                "Generated quality assurance reports on broken links, 404s, and unused resources",
+                "Oversaw and debugged soft launch of responsive GE Appliances website"
+            ]
+        }, {
+            client: "Green2Sustainable",
+            achievements: [
+                "Debugged migration from Apache and Django to Node.js and Backbone.js",
+                "Implemented improved user profile features"
+            ]
+        }, {
+            client: "Internet Ontology Project at Indiana University", 
+            achievements: [
+                "Performed AI/ML research",
+                "Migrated relational MySQL database to RDF triplestore",
+                "Developed ISO-compliant MySQL datetime schema",
+                "Built web application to dynamically compare ontology terms",
+                "Upgraded and maintained NLP models",
+                "Implemented algorithm to search by ontological criteria",
+                "Published cited technical presentation"
+            ]
+        }, {
+            client: "The Salvation Army",
+            achievements: [
+                "Scripted animations and events for holiday-themed fundraising portal, boosting donations by 15% that season"
+            ]
+        }, {
+            client: "Waste Management",
+            achievements: [
+                "Maintained CRM system for corporate segment of over 20 million customers"
+            ]
+        }]
     }, {
         role      : "Senior Web Application Developer",
         startDate : "2019",
