@@ -30,8 +30,8 @@
 
 @media (min-width: breakpoints.$laptop), (orientation: landscape) {
     .downloadPDF {
-        border-top: calc(100px + env(safe-area-inset-top)) solid #6a747d;
-        border-left: calc(100px + env(safe-area-inset-top)) solid transparent;
+        border-top: calc(100px + env(safe-area-inset-right)) solid #6a747d;
+        border-left: calc(100px + env(safe-area-inset-right)) solid transparent;
         position: fixed;
         right: 0;
         z-index: 9999;
@@ -41,13 +41,13 @@
 
         a {
             position: absolute;
-            top: calc(-100px - calc(env(safe-area-inset-top) / 2));
+            top: calc(-100px - calc(env(safe-area-inset-right) / 2));
             right: 0;
             text-align: right;
             font-family: arial;
             display: block;
             color: white;
-            padding: 0.5rem calc(0.5rem + calc(env(safe-area-inset-top) / 2)) 0 0;
+            padding: 0.5rem calc(0.5rem + calc(env(safe-area-inset-right) / 2)) 0 0;
             text-decoration: none;
             margin: 0;
             width: auto;
@@ -55,7 +55,7 @@
 
         &:hover {
             background-color: transparent;
-            border-top: calc(100px + env(safe-area-inset-top)) solid #505A5E;
+            border-top: calc(100px + env(safe-area-inset-right)) solid #505A5E;
         }
     }
 }
