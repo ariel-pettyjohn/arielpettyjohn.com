@@ -30,7 +30,7 @@
 
 @media (min-width: breakpoints.$laptop), (orientation: landscape) {
     .downloadPDF {
-        border-top: calc(100px + calc(2 * env(safe-area-inset-right))) solid #6a747d;
+        border-top: calc(100px + env(safe-area-inset-right)) solid #6a747d;
         border-left: calc(100px + calc(2 * env(safe-area-inset-right))) solid transparent;
         position: fixed;
         right: 0;
@@ -41,7 +41,7 @@
 
         a {
             position: absolute;
-            top: calc(-100px - calc(2 * env(safe-area-inset-right)));
+            top: calc(-100px - calc(env(safe-area-inset-right) / 2));
             right: 0;
             text-align: right;
             font-family: arial;
@@ -55,7 +55,7 @@
 
         &:hover {
             background-color: transparent;
-            border-top: calc(100px + calc(2 * env(safe-area-inset-right))) solid #505A5E;
+            border-top: calc(100px + env(safe-area-inset-right)) solid #505A5E;
         }
     }
 }
