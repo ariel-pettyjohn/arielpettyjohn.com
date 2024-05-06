@@ -9,5 +9,7 @@
 @media (min-width: breakpoints.$mobile) {   
     .Summary {
         border: none;
+
+        padding-bottom: 0;
     }
 }

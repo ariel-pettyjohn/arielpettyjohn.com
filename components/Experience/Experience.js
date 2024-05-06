@@ -21,17 +21,15 @@ export default function Experience ({ experiences }) {
             <ul className={isAgency ? styles.agencyHighlights : null}>
                 {isAgency ? highlights.map((highlight, index) => 
                     <li className={styles.agencyHighlight} key={index}>
-                        <dl>
-                            <dt>{highlight.client}</dt> 
+                        <header className={styles.client}>
+                            {highlight.client}
+                        </header> 
                             
-                            <dd>
-                                <ul className={styles.agencyAchievements}>
-                                    {highlight.achievements.map((achievement, index) =>
-                                        <li key={index}>{achievement}</li>
-                                    )}
-                                </ul>
-                            </dd>
-                        </dl>
+                        <ul className={styles.agencyAchievements}>
+                            {highlight.achievements.map((achievement, index) =>
+                                <li key={index}>{achievement}</li>
+                            )}
+                        </ul>
                     </li>
                 ) : highlights.map((highlight, index) => 
                     <li key={index}>

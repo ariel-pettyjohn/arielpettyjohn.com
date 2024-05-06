@@ -1,20 +1,29 @@
+import styles from "./Education.module.scss";
+
 export default function Education ({ education }) {
     return education.map(({ 
         major, 
         startDate, 
         endDate, 
-        school
+        school,
+        highlights
     }) =>
-        <article key={major}>
-            <h3 className="h6">
-                <span>
+        <article className={styles.Education} key={major}>
+            <header>
+                <h3 className="h6">
                     {major}
-                </span>
+                </h3>
                 
                 <span className="text--small">
                     {school}, {startDate} &ndash; {endDate ?? "Present"}
                 </span>
-            </h3>
+            </header>
+
+            <ul>
+                    {highlights.map((highlight) =>
+                        <li>{highlight}</li>
+                    )}
+                </ul>
         </article>
     );
 }

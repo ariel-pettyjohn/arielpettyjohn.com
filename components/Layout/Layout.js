@@ -9,7 +9,7 @@ import { Roboto_Slab as TextFont } from "next/font/google";
 import styles from "./Layout.module.scss";
 
 const headingFont = HeadingFont({
-    weight  : ["400", "600"],
+    weight  : ["400", "600", "700"],
     subsets : ["latin"],
     style   : ["normal", "italic"],
     variable: "--heading-font"
@@ -26,7 +26,7 @@ export default function Layout({ Page, props }) {
 
     const updateResumeMargin = () => document.documentElement.style.setProperty(
         '--resume-marginTop', 
-        `calc(${footerRef.current.scrollHeight}px + var(--page-marginTop))`
+        `calc(${footerRef.current?.scrollHeight}px + var(--page-marginTop))`
     );
 
     useEffect(() => {

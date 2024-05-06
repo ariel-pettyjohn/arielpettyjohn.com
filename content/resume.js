@@ -168,13 +168,28 @@ const resume = {
         startDate: "2015",
         endDate  : "2016",
         school   : "University of Louisville",
-        location : "Louisville, KY"
+        location : "Louisville, KY",
+        highlights: [
+            "Completed 1 year as Economics major",
+            "Maintained 3.8 GPA",
+            "Academic writing featured as example in course syllabus"
+        ]
     }, {
         major    : "Computer Science and Mathematics",
         startDate: "2008",
         endDate  : "2010",
         school   : "Indiana University Bloomington",
-        location : "Bloomington, IN"
+        location : "Bloomington, IN",
+        highlights: [
+            "Completed 2 years as Computer Science and Mathematics dual major",
+            "Inaugural Director Informatics Student Association",
+            "Undergraduate Instructor Introduction to Informatics",
+            <>Gibbs Scholarship (2008 &ndash; 2010)</>, 
+            "Undergraduate Research Scholarship (2010)", 
+            "Alpha Lambda Delta", 
+            "Phi Eta Sigma", 
+            "National Society of Collegiate Scholars"
+        ]
     }]
 };
 
