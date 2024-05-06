@@ -33,7 +33,7 @@ const resume = {
     summary: [
         <>{yearsOfExperience} years as a Software Engineer leveraging cloud-native services and open-source technology stacks to implement software systems</>,
         <>3 years directly managing junior engineers and cross-functional relationships between internal and external clients</>,
-        <>Led development of key platforms that collectively serve &gt; 15M monthly users for brands including Eurofins Genomics, Firestone, General Electric, Holiday World, Home Depot, and Pillsbury</>,
+        <>Led development of key platforms that collectively serve &gt; 15M monthly users for brands including Eurofins Genomics, Firestone, General Electric, Home Depot, and Pillsbury</>,
         <>In business {yearsOfExperience} years as an entrepreneur and freelance engineer, managing connections with subcontractors and vendors</>
     ],
     skillsets: [{
