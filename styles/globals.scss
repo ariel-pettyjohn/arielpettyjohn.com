@@ -13,6 +13,8 @@
 }
 
 html, body {
+    font-size: 16px;
+
     overscroll-behavior: none;
 }
 
@@ -83,6 +85,7 @@ ul {
 
 ul, dl {
     display: flow-root;
+    font-size: 1rem;
 }
 
 dt {
