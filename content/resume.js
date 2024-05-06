@@ -65,7 +65,7 @@ const resume = {
         skills  : <>Apache, AWS, Circle CI, Docker, Linux</>
     }],
     experiences: [{
-        role      : "Solutions Architect",
+        role      : "Freelance Solutions Architect",
         startDate : "2011",
         endDate   : null,
         employer  : "Web Architecture Solutions",
