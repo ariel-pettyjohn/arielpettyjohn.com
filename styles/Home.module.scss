@@ -41,7 +41,7 @@
 
         a {
             position: absolute;
-            top: calc(-100px - calc(env(safe-area-inset-right) * 1.5));
+            top: calc(-100px - env(safe-area-inset-right));
             right: 0;
             text-align: right;
             font-family: arial;
