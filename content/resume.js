@@ -157,7 +157,7 @@ const resume = {
         highlights: [
             "Directed front-end development of websites and CMS integration for clients including Hensley Manufacturing, Stonestreet Farms, and The Voice-Tribune newspaper",
             <>Crafted infographics for brands including Maker&apos;s Mark and The Kentucky Derby, increasing traffic to their respective primary domains by 70% on launch</>,
-            <>"Managed Big Ass Fans&apos; ecommerce migration to Magento, reducing storefront load times by 10%"</>,
+            <>Managed Big Ass Fans&apos; ecommerce migration to Magento, reducing storefront load times by 10%</>,
             "Engineered first ecommerce storefront for Holiday World theme park",
             "Wrote custom PHP script to inline CSS for Big Ass Fans and Humana eblasts, increasing turnaround 5x",
             "Launched Holiday World microsite to unveil first launched wing roller coaster in U.S"
