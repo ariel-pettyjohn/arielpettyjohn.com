@@ -1,7 +1,7 @@
 @use "./breakpoints"; 
 
 :root {
-    --page-marginTop: 2em;
+    --page-marginTop: 2rem;
     
     --h1: 1.476em;
     --h2: 1.383em;
@@ -165,7 +165,7 @@ input[type="search"] {
 
 @media (min-width: breakpoints.$laptop), (orientation: landscape) {
     :root {
-        --page-marginTop: 0em;
+        --page-marginTop: 0rem;
     }
 }
 
