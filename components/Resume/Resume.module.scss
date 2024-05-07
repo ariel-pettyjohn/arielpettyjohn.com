@@ -15,11 +15,11 @@
 
 .profile {
     border-top: solid 2px #6a747d;
-    padding-top: 2rem;
+    padding-top: 2em;
     background: white;
     position: relative;
     margin-bottom: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 2em;
 }
 
 .introduction {
@@ -30,7 +30,7 @@
 .photo {
     display: block;
 	width: calc(62%);
-	margin: 0 auto 2rem;
+	margin: 0 auto 2em;
 }
 
 .main {
@@ -58,9 +58,9 @@
     display: block; 
 
     background: #e1eaf3;
-    padding: 1rem;
+    padding: 1em;
 
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 2em;
 
     position: relative;
 
@@ -82,19 +82,19 @@
     .introduction {
         flex-direction: row;
 
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
     }
 
     .profile {
         border-top: none;
         width: calc(62% - 1rem);
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 1em;
         padding-bottom: 0;
         padding-top: 0;
     }
 
 	.photo {
-		margin: 0 0 2rem;
+		margin: 0 0 2em;
 	}
 
     .skills {
@@ -103,7 +103,7 @@
     }
 
     .education {
-        margin: 0 0 2rem;
+        margin: 0 0 2em;
     }
 }
 
@@ -123,16 +123,16 @@
     }
 
     .introduction {
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
     }
 
     .profile, .content {
         width: calc(62% - 2rem);
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 2em;
     }
 
     .photo {
-        margin-bottom: 4rem;
+        margin-bottom: 4em;
     }
 
     .main {
@@ -146,7 +146,7 @@
     }
 
     .skills, .experience {
-        padding-top: 2rem;
+        padding-top: 2em;
     }
 
     .skills {
@@ -160,7 +160,7 @@
 
         height: fit-content;
 
-        margin-right: 2rem;
+        margin-right: 2em;
         width: calc(38% - 2rem);
     }
 
