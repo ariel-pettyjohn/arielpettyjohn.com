@@ -1,0 +1,11 @@
+.Education {
+    border-bottom: solid 2px #6a747d;
+
+    padding-bottom: 1rem;
+
+    &:last-child {
+        border: none;
+
+        padding: 0;
+    }
+}

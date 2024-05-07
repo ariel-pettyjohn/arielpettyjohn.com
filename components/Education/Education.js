@@ -20,10 +20,10 @@ export default function Education ({ education }) {
             </header>
 
             <ul>
-                    {highlights.map((highlight, index) =>
-                        <li key={index}>{highlight}</li>
-                    )}
-                </ul>
+                {highlights.map((highlight, index) =>
+                    <li key={index}>{highlight}</li>
+                )}
+            </ul>
         </article>
     );
 }
