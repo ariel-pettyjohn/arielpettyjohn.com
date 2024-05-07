@@ -58,15 +58,15 @@
     display: block; 
 
     background: #e1eaf3;
-    padding: 1em;
+    padding: 2em 1em;
 
-    margin: 0 1rem 2em;
+    margin: 0 1em 2em;
 
     position: relative;
 
     .corner {
-        border-top: 2rem solid white;
-        border-left: 2rem solid transparent;
+        border-top: 2em solid white;
+        border-left: 2em solid transparent;
 
         position: absolute;
         top: 0;
@@ -76,7 +76,7 @@
 
 @media (min-width: breakpoints.$mobile) {     
     .Resume {
-        padding: calc(2rem + env(safe-area-inset-top)) calc(2rem + env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) calc(2rem + env(safe-area-inset-left));
+        padding: calc(2em + env(safe-area-inset-top)) calc(2em + env(safe-area-inset-right)) calc(2em + env(safe-area-inset-bottom)) calc(2em + env(safe-area-inset-left));
     }
     
     .introduction {
@@ -87,7 +87,7 @@
 
     .profile {
         border-top: none;
-        width: calc(62% - 1rem);
+        width: calc(62% - 1em);
         margin: 0 0 0 1em;
         padding-bottom: 0;
         padding-top: 0;
@@ -109,9 +109,9 @@
 
 @media (min-width: breakpoints.$laptop) {
     .Resume {
-        padding: 4rem 0;
+        padding: 4em 0;
 
-        padding: calc(4rem + env(safe-area-inset-top)) env(safe-area-inset-right) 4rem env(safe-area-inset-left);
+        padding: calc(4em + env(safe-area-inset-top)) env(safe-area-inset-right) 4em env(safe-area-inset-left);
 
         .inner {
             margin: 0 auto;
@@ -127,7 +127,7 @@
     }
 
     .profile, .content {
-        width: calc(62% - 2rem);
+        width: calc(62% - 2em);
         margin: 0 0 0 2em;
     }
 
@@ -161,7 +161,7 @@
         height: fit-content;
 
         margin-right: 2em;
-        width: calc(38% - 2rem);
+        width: calc(38% - 2em);
     }
 
     .education {

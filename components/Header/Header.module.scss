@@ -55,14 +55,14 @@
 
         text-align: right;
 
-        width: calc(38% - 1rem);
-        margin: 0 1rem 0 0;
+        width: calc(38% - 1em);
+        margin: 0 1em 0 0;
 
         .corner {
             background-color: transparent;
             
-            border-top: 2rem solid white;
-            border-right: 2rem solid transparent;
+            border-top: 2em solid white;
+            border-right: 2em solid transparent;
             
             display: block;
     
@@ -101,13 +101,13 @@
 
 @media (min-width: breakpoints.$laptop) {
     .Header {
-        margin: 0 2rem 0 0;
+        margin: 0 2em 0 0;
 
-        width: calc(38% - 2rem);
+        width: calc(38% - 2em);
 
         .corner {
-            border-top: 4rem solid white;
-            border-right: 4rem solid transparent;
+            border-top: 4em solid white;
+            border-right: 4em solid transparent;
         }
 
         .inner {

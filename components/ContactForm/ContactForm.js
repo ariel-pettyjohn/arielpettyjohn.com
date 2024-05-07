@@ -9,10 +9,15 @@ export default function ContactForm() {
 
     const { succeeded, errors, submitting} = state;
 
-    if (succeeded) return <p>Thanks for your submission!</p>;
 
     return (
         <form className={styles.ContactForm} onSubmit={handleSubmit}>
+            {succeeded ? (
+                <p className={styles.thanks}>
+                    Thanks for your message!
+                </p>
+            ) : null}
+
             <div className={styles.row}>
                 <label className={styles.field} htmlFor="name">
                     <span className={styles.label}>Name</span>
