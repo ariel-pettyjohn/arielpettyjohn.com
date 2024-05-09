@@ -1,5 +1,10 @@
 @use "../../styles/breakpoints.scss";
 
+$safe-area-top   : env(safe-area-inset-top);
+$safe-area-right : env(safe-area-inset-right);
+$safe-area-bottom: env(safe-area-inset-bottom);
+$safe-area-left  : env(safe-area-inset-left);
+
 @mixin fixedFooter {
     @media (orientation: portrait), 
         (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
@@ -15,9 +20,9 @@
     align-items: center;
     justify-content: flex-end;
 
-    padding: 2em calc(1em + env(safe-area-inset-right)) calc(2em + env(safe-area-inset-bottom)) calc(1em + env(safe-area-inset-left));
+    padding: 2em calc(1em + $safe-area-right) calc(2em + $safe-area-bottom) calc(1em + $safe-area-left);
 
-    width: calc(100% - calc(1em + env(safe-area-inset-right)) - calc(1em + env(safe-area-inset-left)));
+    width: calc(100% - calc(1em + $safe-area-right) - calc(1em + $safe-area-left));
 
     z-index: -1;
 
@@ -42,14 +47,11 @@
     }
 }
 
-
-
-
 @media (min-width: breakpoints.$laptop) {
     .Footer {
-        padding: 4em calc(2em + env(safe-area-inset-right)) calc(4em + env(safe-area-inset-bottom)) calc(2em + env(safe-area-inset-left));
+        padding: 4em calc(2em + $safe-area-right) calc(4em + $safe-area-bottom) calc(2em + $safe-area-left);
 
-        width: calc(100% - calc(2em + env(safe-area-inset-right)) - calc(2em + env(safe-area-inset-left)));
+        width: calc(100% - calc(2em + $safe-area-right) - calc(2em + $safe-area-left));
 
         .getInTouch {
             width: 62%;

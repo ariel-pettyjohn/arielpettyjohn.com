@@ -14,9 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .field {
-        width: 100%;
-    }
+    .field { width: 100%; }
 }
 
 .field {
@@ -26,26 +24,21 @@
     margin-bottom: 1em;
 }
 
-.label {
-    margin-bottom: 0.25em;
-}
+.label { margin-bottom: 0.25em; }
 
-.message {
-    aspect-ratio: 2.4 / 1;
-}
+.message { aspect-ratio: 2.4 / 1; }
 
 .thanks {
     background: #cfd4d8;
 
     font-size: var(--h6);
 
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
     height: 100%;
     width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;    
 }
 
 .button {
@@ -61,17 +54,13 @@
 
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-        background-color: #505A5E;   
-    }
+    &:hover { background-color: #505A5E; }
 }
 
 @media (min-width: breakpoints.$mobile) {   
     .row {
         flex-direction: row;
 
-        .field {
-            width: calc(50% - 0.5em);
-        }
+        .field { width: calc(50% - 0.5em); }
     }
 }

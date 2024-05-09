@@ -2,16 +2,15 @@
 
 .Contact {
     display: flex;
-    justify-content: space-around;
     align-items: baseline;
+    justify-content: space-around;
 }
 
-.location, .text {
-    display: none;
-}
+.location, .text { display: none; }
 
 .icon {
     margin-left: 0.5em;
+    
     width: 1em;
 }
 
@@ -32,7 +31,5 @@
         }
     }
 
-    .location, .text {
-        display: inline;
-    }
+    .location, .text { display: inline; }
 }

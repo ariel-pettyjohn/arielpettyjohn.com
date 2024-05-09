@@ -1,7 +1,13 @@
 @use "../../styles/breakpoints.scss";
 
+$safe-area-top: env(safe-area-inset-top);
+$safe-area-right: env(safe-area-inset-right);
+$safe-area-bottom: env(safe-area-inset-bottom);
+$safe-area-left: env(safe-area-inset-left);
+
+
 .Resume {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left);
+    padding: $safe-area-top $safe-area-right 0 $safe-area-left;
 
     background-color: white;
 
@@ -14,12 +20,14 @@
 }
 
 .profile {
-    border-top: solid 2px #6a747d;
-    padding-top: 2em;
     background: white;
-    position: relative;
+    border-top: solid 2px #6a747d;
+    
     margin-bottom: 0;
+    padding-top: 2em;
     padding-bottom: 2em;
+
+    position: relative;
 }
 
 .introduction {
@@ -29,8 +37,10 @@
 
 .photo {
     display: block;
-	width: calc(62%);
+	
 	margin: 0 auto 2em;
+
+    width: calc(62%);
 }
 
 .main {
@@ -44,23 +54,19 @@
     z-index: 1;
 }
 
-.sectionHeader {
-    font-family: var(--heading-font);
-}
+.sectionHeader { font-family: var(--heading-font); }
 
-.skills {
-    display: block;
-}
+.skills { display: block; }
 
 .experience { display: block; }
 
 .education { 
-    display: block; 
-
     background: #e1eaf3;
-    padding: 2em 1em;
 
+    display: block; 
+    
     margin: 0 1em 2em;
+    padding: 2em 1em;    
 
     position: relative;
 
@@ -76,7 +82,10 @@
 
 @media (min-width: breakpoints.$mobile) {     
     .Resume {
-        padding: calc(2em + env(safe-area-inset-top)) calc(2em + env(safe-area-inset-right)) calc(2em + env(safe-area-inset-bottom)) calc(2em + env(safe-area-inset-left));
+        padding: calc(2em + $safe-area-top) 
+                 calc(2em + $safe-area-right) 
+                 calc(2em + $safe-area-bottom) 
+                 calc(2em + $safe-area-left);
     }
     
     .introduction {
@@ -87,31 +96,28 @@
 
     .profile {
         border-top: none;
-        width: calc(62% - 1em);
+        
         margin: 0 0 0 1em;
         padding-bottom: 0;
         padding-top: 0;
+
+        width: calc(62% - 1em);
     }
 
-	.photo {
-		margin: 0 0 2em;
-	}
+	.photo { margin: 0 0 2em; }
 
     .skills {
-        width: 100%;
         margin: 0;
+        
+        width: 100%;
     }
 
-    .education {
-        margin: 0 0 2em;
-    }
+    .education { margin: 0 0 2em; }
 }
 
 @media (min-width: breakpoints.$laptop) {
     .Resume {
-        padding: 4em 0;
-
-        padding: calc(4em + env(safe-area-inset-top)) env(safe-area-inset-right) 4em env(safe-area-inset-left);
+        padding: calc(4em + $safe-area-top) $safe-area-right 4em $safe-area-left;
 
         .inner {
             margin: 0 auto;
@@ -122,18 +128,15 @@
         }   
     }
 
-    .introduction {
-        margin-bottom: 2em;
-    }
+    .introduction { margin-bottom: 2em; }
 
     .profile, .content {
-        width: calc(62% - 2em);
         margin: 0 0 0 2em;
+
+        width: calc(62% - 2em);
     }
 
-    .photo {
-        margin-bottom: 4em;
-    }
+    .photo { margin-bottom: 4em; }
 
     .main {
         flex-direction: row;
@@ -141,30 +144,26 @@
         padding: 0;
     }
 
-    .sectionHeader {
-        width: fit-content;
-    }
+    .sectionHeader { width: fit-content; }
 
-    .skills, .experience {
-        padding-top: 2em;
-    }
+    .skills, .experience { padding-top: 2em; }
 
     .skills {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        text-align: right;
+        
+        height: fit-content;
+        
+        margin-right: 2em;
 
         position: sticky;
         top: 0;
 
-        height: fit-content;
+        text-align: right;
 
-        margin-right: 2em;
         width: calc(38% - 2em);
     }
 
-    .education {
-        margin: 0;
-    }
+    .education { margin: 0; }
 }
