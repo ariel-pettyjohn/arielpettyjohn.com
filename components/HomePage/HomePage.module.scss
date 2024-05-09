@@ -82,3 +82,19 @@
         }
     }
 }
+
+@media (min-width: 1440px) {
+    .downloadPDF {
+        border-top: calc(200px + calc(1.5 * variables.$safeAreaRight)) solid translucent(106, 116, 125);
+        border-left: calc(200px + calc(1.5 * variables.$safeAreaRight)) solid transparent;
+    
+        &:hover {
+            background-color: transparent;
+            border-top: calc(200px + calc(1.5 * variables.$safeAreaRight)) solid translucent(80, 90, 94);
+        }
+
+        a {
+            top: calc(-200px - variables.$safeAreaRight);
+        }
+    }
+}
