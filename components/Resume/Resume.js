@@ -1,9 +1,9 @@
-import Header     from '../Header/Header';
-import Summary    from '../Summary/Summary';
-import Skills     from '../Skills/Skills';
-import Experience from '../Experience/Experience';
-import Section    from '../Section/Section';
-import Aside      from "../Aside/Aside";
+import ResumeHeader from '../ResumeHeader/ResumeHeader';
+import Summary      from '../Summary/Summary';
+import Skills       from '../Skills/Skills';
+import Experience   from '../Experience/Experience';
+import Section      from '../Section/Section';
+import Aside        from "../Aside/Aside";
 
 import styles from './Resume.module.scss';
 
@@ -23,7 +23,7 @@ export default function Resume ({
         <main className={styles.Resume}>
             <div className={styles.inner}>
                 <div className={styles.introduction}>
-                    <Header 
+                    <ResumeHeader 
                         firstName       = {firstName}
                         lastName        = {lastName}
                         title           = {title}

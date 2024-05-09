@@ -1,8 +1,8 @@
 import Contact from '../Contact/Contact';
 
-import styles from "./Header.module.scss";
+import styles from "./ResumeHeader.module.scss";
 
-export default function Header({ 
+export default function ResumeHeader({ 
     firstName, 
     lastName, 
     title, 
