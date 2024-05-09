@@ -20,7 +20,10 @@ $safe-area-left  : env(safe-area-inset-left);
     align-items: center;
     justify-content: flex-end;
 
-    padding: 2em calc(1em + $safe-area-right) calc(2em + $safe-area-bottom) calc(1em + $safe-area-left);
+    padding: 2em 
+             calc(1em + $safe-area-right) 
+             calc(2em + $safe-area-bottom) 
+             calc(1em + $safe-area-left);
 
     width: calc(100% - calc(1em + $safe-area-right) - calc(1em + $safe-area-left));
 
@@ -41,15 +44,14 @@ $safe-area-left  : env(safe-area-inset-left);
             font-family: var(--heading-font);
         }
     }
-
-    .copyright {
-        font-size: 12px;
-    }
 }
 
 @media (min-width: breakpoints.$laptop) {
     .Footer {
-        padding: 4em calc(2em + $safe-area-right) calc(4em + $safe-area-bottom) calc(2em + $safe-area-left);
+        padding: 4em 
+                 calc(2em + $safe-area-right) 
+                 calc(4em + $safe-area-bottom) 
+                 calc(2em + $safe-area-left);
 
         width: calc(100% - calc(2em + $safe-area-right) - calc(2em + $safe-area-left));
 

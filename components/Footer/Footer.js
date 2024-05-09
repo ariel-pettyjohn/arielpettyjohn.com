@@ -17,7 +17,7 @@ function Footer (_, ref) {
                 <ContactForm />
             </section>
             
-            <span className={styles.copyright}>
+            <span className="text--small">
                 Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
             </span>
         </footer>

@@ -1,0 +1,7 @@
+@use "../../styles/breakpoints.scss";
+
+.SectionHeader { font-family: var(--heading-font); }
+
+@media (min-width: breakpoints.$laptop) {
+    .SectionHeader { width: fit-content; }
+}

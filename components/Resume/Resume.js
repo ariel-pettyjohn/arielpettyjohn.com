@@ -2,6 +2,8 @@ import Header     from '../Header/Header';
 import Summary    from '../Summary/Summary';
 import Skills     from '../Skills/Skills';
 import Experience from '../Experience/Experience';
+import Section    from '../Section/Section';
+import Aside      from "../Aside/Aside";
 
 import styles from './Resume.module.scss';
 
@@ -29,43 +31,37 @@ export default function Resume ({
                         pointsOfContact = {pointsOfContact}
                     />
 
-                    <section className={styles.profile}>
+                    <Section className={styles.profile}>
                         <img className={styles.photo} 
                             src = {photo} 
                             alt = {`${firstName} ${lastName}`}
                         />
 
                         <Summary summary={summary} />
-                    </section>
+                    </Section>
                 </div>
 
                 <div className={styles.main}>
-                    <aside className={styles.skills}>
-                        <header className={styles.sectionHeader}>
-                            <h2 className="h5">Skills</h2>
-                        </header>
-
+                    <Aside className={styles.skills} heading="Skills">
                         <Skills skillsets={skillsets} />
-                    </aside>
+                    </Aside>
 
                     <div className={styles.content}>
-                        <section className={styles.experience}>
-                            <header className={styles.sectionHeader}>
-                                <h2 className="h5">Experience</h2>
-                            </header>
-                            
+                        <Section 
+                            className = {styles.experience}
+                            heading   = "Experience"
+                        >
                             <Experience experiences={experiences} />
-                        </section>
+                        </Section>
 
-                        <section className={styles.education}>
+                        <Section 
+                            className = {styles.education}
+                            heading   = "Education"
+                        >
                             <span className={styles.corner}></span>
-
-                            <header className={styles.sectionHeader}>
-                                <h2 className="h5">Education</h2>
-                            </header>
                             
                             <Experience experiences={education} />
-                        </section>
+                        </Section>
                     </div>
                 </div>
             </div>
