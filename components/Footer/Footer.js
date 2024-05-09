@@ -9,17 +9,19 @@ import styles from "./Footer.module.scss";
 function Footer (_, ref) {
     return (
         <footer className={styles.Footer} ref={ref}>
-            <section className={styles.getInTouch}>
-                <header>
-                    <h2 className="h5">Get in Touch</h2>
-                </header>
+            <div className={styles.inner}>
+                <section className={styles.getInTouch}>
+                    <header>
+                        <h2 className="h5">Get in Touch</h2>
+                    </header>
+                    
+                    <ContactForm />
+                </section>
                 
-                <ContactForm />
-            </section>
-            
-            <span className="text--small">
-                Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
-            </span>
+                <span className="text--small">
+                    Copyright &copy; {getCurrentYear()} Ariel Pettyjohn 
+                </span>
+            </div>
         </footer>
     );
 }

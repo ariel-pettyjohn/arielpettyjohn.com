@@ -1,4 +1,4 @@
-@use "./breakpoints"; 
+@use "./variables"; 
 
 :root {
     --page-marginTop: 2rem;
@@ -125,7 +125,7 @@ p { margin: 0; }
 
 small, .text--small { font-size: var(--text-small); }
 
-@media (min-width: breakpoints.$mobile) {
+@media (min-width: variables.$mobile) {
     :root {
         --h1: 2.027em;
         --h2: 1.802em;
@@ -140,7 +140,7 @@ small, .text--small { font-size: var(--text-small); }
     aside, section { padding: 0; }    
 }
 
-@media (min-width: breakpoints.$tablet) {
+@media (min-width: variables.$tablet) {
     :root {
         --h1: 2.986em;
         --h2: 2.488em;
@@ -153,11 +153,11 @@ small, .text--small { font-size: var(--text-small); }
     }
 }
 
-@media (min-width: breakpoints.$laptop), (orientation: landscape) {
+@media (min-width: variables.$laptop), (orientation: landscape) {
     :root { --page-marginTop: 0rem; }
 }
 
-@media (min-width: breakpoints.$laptop) {
+@media (min-width: variables.$laptop) {
     :root {
         --h1: 3.815em;
         --h2: 3.052em;
@@ -170,7 +170,7 @@ small, .text--small { font-size: var(--text-small); }
     }
 }
 
-@media (min-width: breakpoints.$desktop) {
+@media (min-width: variables.$desktop) {
     :root {
         --h1: 5.610em;
         --h2: 4.209em;

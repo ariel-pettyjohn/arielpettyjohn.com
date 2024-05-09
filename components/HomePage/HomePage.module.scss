@@ -1,67 +1,84 @@
-@use "../../styles/breakpoints.scss";
+@use "../../styles/variables.scss";
 
-.downloadPDF {
-    height: var(--page-marginTop);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background-color: #6a747d;
-    position: fixed;
-    top: 0;
-    text-align: right;
-    width: 100%;
-    right: 0;
-    z-index: 9999;
-
-    a {
-        text-decoration: none;
-        display: block;
-        color: white;
-        width: 100%;
-        text-align: center;
-    }
-
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        background-color: #505A5E;   
-    }
-}
-
+// White background
 @function translucent ($r, $g, $b) {
     $min: min($r, $g, $b);
     $alpha: (255 - $min) / 255;
     @return rgba($r - $min, $g - $min, $b - $min, $alpha);
 }
 
-@media (min-width: breakpoints.$laptop), (orientation: landscape) {
+.downloadPDF {
+    background-color: #6a747d;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: var(--page-marginTop);
+        
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    text-align: right;
+
+    transition: all 0.2s ease-in-out;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    &:hover { background-color: #505A5E; }
+
+    a {
+        color: white;
+        
+        display: block;
+        
+        text-align: center;
+        text-decoration: none;
+        
+        width: 100%;
+    }
+}
+
+@media (min-width: variables.$laptop), (orientation: landscape) {
     .downloadPDF {
-        border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid translucent(106, 116, 125);
-        border-left: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid transparent;
+        background-color: transparent;
+        
+        border-top: calc(100px + calc(1.5 * variables.$safeAreaRight)) solid translucent(106, 116, 125);
+        border-left: calc(100px + calc(1.5 * variables.$safeAreaRight)) solid transparent;
+        
         position: fixed;
         right: 0;
-        z-index: 9999;
-        background-color: transparent;
+        
         height: auto;
         width: auto;
 
-        a {
-            position: absolute;
-            top: calc(-100px - calc(env(safe-area-inset-right)));
-            right: 0;
-            text-align: right;
-            font-family: arial;
-            display: block;
-            color: white;
-            padding: 0.625em calc(0.625em + calc(env(safe-area-inset-right) / 2)) 0 0;
-            text-decoration: none;
-            margin: 0;
-            width: auto;
-        }
+        z-index: 9999;
 
         &:hover {
             background-color: transparent;
-            border-top: calc(100px + calc(1.5 * env(safe-area-inset-right))) solid translucent(80, 90, 94);
+            border-top: calc(100px + calc(1.5 * variables.$safeAreaRight)) solid translucent(80, 90, 94);
+        }
+
+        a {
+            color: white;
+
+            display: block;
+
+            font-family: arial;
+            text-align: right;
+            text-decoration: none;
+            
+            margin: 0;
+            padding: 0.625em calc(0.625em + calc(variables.$safeAreaRight / 2)) 0 0;
+
+            position: absolute;
+            top: calc(-100px - variables.$safeAreaRight);
+            right: 0; 
+            
+            width: auto;
         }
     }
 }

@@ -1,4 +1,4 @@
-@use "../../styles/breakpoints.scss";
+@use "../../styles/variables.scss";
 
 .Header {
     background: #e1eaf3;
@@ -39,7 +39,7 @@
     }
 }
 
-@media (min-width: breakpoints.$mobile) {     
+@media (min-width: variables.$mobile) {     
     .Header {
         display: flex;
         flex-direction: column;
@@ -93,7 +93,7 @@
     }
 }
 
-@media (min-width: breakpoints.$laptop) {
+@media (min-width: variables.$laptop) {
     .Header {
         margin: 0 2em 0 0;
 

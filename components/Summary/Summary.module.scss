@@ -1,4 +1,4 @@
-@use "../../styles/breakpoints.scss";
+@use "../../styles/variables.scss";
 
 .Summary {
     border-bottom: solid 2px #6a747d;
@@ -6,7 +6,7 @@
     padding-bottom: 2em;
 }
 
-@media (min-width: breakpoints.$mobile) {   
+@media (min-width: variables.$mobile) {   
     .Summary {
         border: none;
 

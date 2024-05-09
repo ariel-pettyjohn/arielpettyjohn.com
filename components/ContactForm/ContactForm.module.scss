@@ -1,4 +1,4 @@
-@use "../../styles/breakpoints.scss";
+@use "../../styles/variables.scss";
 
 .ContactForm {
     display: flex;
@@ -57,7 +57,7 @@
     &:hover { background-color: #505A5E; }
 }
 
-@media (min-width: breakpoints.$mobile) {   
+@media (min-width: variables.$mobile) {   
     .row {
         flex-direction: row;
 

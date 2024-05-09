@@ -1,0 +1,9 @@
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+$safeAreaTop   : env(safe-area-inset-top);
+$safeAreaRight : env(safe-area-inset-right);
+$safeAreaBottom: env(safe-area-inset-bottom);
+$safeAreaLeft  : env(safe-area-inset-left);

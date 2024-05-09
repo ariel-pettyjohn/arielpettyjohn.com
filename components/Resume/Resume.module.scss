@@ -1,20 +1,14 @@
-@use "../../styles/breakpoints.scss";
-
-$safe-area-top: env(safe-area-inset-top);
-$safe-area-right: env(safe-area-inset-right);
-$safe-area-bottom: env(safe-area-inset-bottom);
-$safe-area-left: env(safe-area-inset-left);
-
+@use "../../styles/variables.scss";
 
 .Resume {
-    padding: $safe-area-top $safe-area-right 0 $safe-area-left;
+    padding: variables.$safeAreaTop variables.$safeAreaRight 0 variables.$safeAreaLeft;
 
     background-color: white;
 
     border-bottom: solid 2px #6a747d;
 
     @media (orientation: portrait), 
-        (min-width: breakpoints.$tablet) and (max-aspect-ratio: 2 / 1) {
+        (min-width: variables.$tablet) and (max-aspect-ratio: 2 / 1) {
         margin-bottom: var(--resume-marginTop);
     }
 }
@@ -78,12 +72,12 @@ $safe-area-left: env(safe-area-inset-left);
     }
 }
 
-@media (min-width: breakpoints.$mobile) {     
+@media (min-width: variables.$mobile) {     
     .Resume {
-        padding: calc(2em + $safe-area-top) 
-                 calc(2em + $safe-area-right) 
-                 calc(2em + $safe-area-bottom) 
-                 calc(2em + $safe-area-left);
+        padding: calc(2em + variables.$safeAreaTop) 
+                 calc(2em + variables.$safeAreaRight) 
+                 calc(2em + variables.$safeAreaBottom) 
+                 calc(2em + variables.$safeAreaLeft);
     }
     
     .introduction {
@@ -113,9 +107,9 @@ $safe-area-left: env(safe-area-inset-left);
     .education { margin: 0 0 2em; }
 }
 
-@media (min-width: breakpoints.$laptop) {
+@media (min-width: variables.$laptop) {
     .Resume {
-        padding: calc(4em + $safe-area-top) $safe-area-right 4em $safe-area-left;
+        padding: calc(4em + variables.$safeAreaTop) variables.$safeAreaRight 4em variables.$safeAreaLeft;
 
         .inner {
             margin: 0 auto;

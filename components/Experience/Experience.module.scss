@@ -6,6 +6,7 @@
 
     &:last-child {
         border-bottom: none;
+        
         margin: 0;
         padding: 0;
     }
@@ -16,13 +17,9 @@
         padding-left: 0;
 
         .project {
-            header {
-                font-weight: 500;
-            }
+            header { font-weight: 500; }
         
-            .highlights {
-                list-style-type: disc;            
-            }
+            .highlights { list-style-type: disc; }
         }
     }
 }
