@@ -30,8 +30,8 @@
             align-items: flex-end;
             justify-content: center;
 
-            font-size: 4.7vw;
-        
+            font-size: 4.6vw;
+
             margin-bottom: 1em;
 
             .separator { margin: 0 0.5em; }
@@ -81,13 +81,23 @@
             .masthead {
                 flex-direction: column;
 
-                font-size: 3.3vw;
+                margin-bottom: 0;
         
                 word-spacing: 9999px;
 
                 .separator { display: none; }
 
-                .title { font-size: 2.46vw; }
+                .name {
+                    font-size: 4.86vw;
+
+                    margin-bottom: 0.25em;
+                }
+
+                .title {
+                    font-size: 3.63764vw;
+
+                    margin-bottom: 1em;
+                }
             }
         }
     }
@@ -104,6 +114,36 @@
             border-right: 4em solid transparent;
         }
 
-        .inner { top: 0; }
+        .inner { 
+            padding: 2rem;
+            
+            top: 0; 
+
+            .masthead {
+                .name {
+                    font-size: 2.7vw;
+                }
+
+                .title {
+                    font-size: 2.02091vw;
+                }
+            }            
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .Header {
+        .inner {
+            .masthead {
+                .name {
+                    font-size: 3.3vw;
+                }
+
+                .title {
+                    font-size: 2.47vw;
+                }
+            }
+        }
     }
 }

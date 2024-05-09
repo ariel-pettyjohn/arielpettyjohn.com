@@ -15,7 +15,7 @@ export default function ResumeHeader({
             
             <div className={styles.inner}>
                 <h1 className={styles.masthead}>
-                    <span>{firstName} {lastName}</span>
+                    <span className={styles.name}>{firstName} {lastName}</span>
 
                     <span className={styles.separator}>/</span>
                     
