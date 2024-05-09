@@ -6,14 +6,14 @@
     justify-content: space-around;
 
     a .text:hover { font-style: italic; }
-}
 
-.location, .text { display: none; }
+    .location, .text { display: none; }
 
-.icon {
-    margin-left: 0.5em;
-    
-    width: 1em;
+    .icon {
+        margin-left: 0.5em;
+        
+        width: 1em;
+    }
 }
 
 @media (min-width: variables.$mobile) {
@@ -23,11 +23,6 @@
 
         margin: 0;
 
-        .location {
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    .location, .text { display: inline; }
+        .location, .text { display: inline; }
+    }    
 }

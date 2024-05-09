@@ -1,7 +1,10 @@
 @use "../../styles/variables.scss";
 
 .Resume {
-    padding: variables.$safeAreaTop variables.$safeAreaRight 0 variables.$safeAreaLeft;
+    padding: variables.$safeAreaTop 
+             variables.$safeAreaRight 
+             0 
+             variables.$safeAreaLeft;
 
     background-color: white;
 
@@ -109,7 +112,10 @@
 
 @media (min-width: variables.$laptop) {
     .Resume {
-        padding: calc(4em + variables.$safeAreaTop) variables.$safeAreaRight 4em variables.$safeAreaLeft;
+        padding: calc(4em + variables.$safeAreaTop) 
+                 variables.$safeAreaRight 
+                 4em 
+                 variables.$safeAreaLeft;
 
         .inner {
             margin: 0 auto;
