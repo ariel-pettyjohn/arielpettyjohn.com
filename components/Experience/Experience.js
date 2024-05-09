@@ -2,41 +2,45 @@ import styles from "./Experience.module.scss";
 
 export default function Experience ({ experiences }) {
     return experiences.map(({ 
+        major,
         role, 
         startDate, 
-        endDate, 
-        employer, 
+        endDate: _endDate, 
+        employer,
+        school,
         highlights,
-        isAgency = false
-    }) =>
-        <article className={styles.experience} key={role}>
-            <header>
-                <h3 className="h6">{role}</h3>
+        projects
+    }) => {
+        const endDate      = _endDate ?? "Present";
+        const organization = employer || school;
+        const className    = projects ? styles.projects : styles.highlights;
 
-                <span className="text--small">
-                    {employer}, {startDate} &ndash; {endDate ?? "Present"}
-                </span>
-            </header>
+        return (
+            <article className={styles.Experience} key={role}>
+                <header>
+                    <h3 className="h6">{major || role}</h3>
 
-            <ul className={isAgency ? styles.agencyHighlights : null}>
-                {isAgency ? highlights.map((highlight, index) => 
-                    <li className={styles.agencyHighlight} key={index}>
-                        <header className={styles.client}>
-                            {highlight.client}
-                        </header> 
-                            
-                        <ul className={styles.agencyAchievements}>
-                            {highlight.achievements.map((achievement, index) =>
-                                <li key={index}>{achievement}</li>
-                            )}
-                        </ul>
-                    </li>
-                ) : highlights.map((highlight, index) => 
-                    <li key={index}>
-                        {highlight}
-                    </li>
-                )}
-            </ul>
-        </article>
-    );
+                    <span className="text--small">
+                        {organization}, {startDate} &ndash; {endDate}
+                    </span>
+                </header>
+
+                <ul className={className}>
+                    {projects ? projects.map(({ project, highlights }, index) => 
+                        <li className={styles.project} key={index}>
+                            <header>{project}</header> 
+                                
+                            <ul className={styles.highlights}>
+                                {highlights.map((highlight, index) =>
+                                    <li key={index}>{highlight}</li>
+                                )}
+                            </ul>
+                        </li>
+                    ) : highlights.map((achievement, index) => 
+                        <li key={index}>{achievement}</li>
+                    )}
+                </ul>
+            </article>
+        );
+    });
 }

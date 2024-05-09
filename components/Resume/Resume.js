@@ -2,7 +2,6 @@ import Header     from '../Header/Header';
 import Summary    from '../Summary/Summary';
 import Skills     from '../Skills/Skills';
 import Experience from '../Experience/Experience';
-import Education  from '../Education/Education';
 
 import styles from './Resume.module.scss';
 
@@ -65,7 +64,7 @@ export default function Resume ({
                                 <h2 className="h5">Education</h2>
                             </header>
                             
-                            <Education education={education} />
+                            <Experience experiences={education} />
                         </section>
                     </div>
                 </div>

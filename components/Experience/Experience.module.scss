@@ -1,4 +1,4 @@
-.experience {
+.Experience {
     border-bottom: solid 2px #6a747d;
 
     margin-bottom: 2em;
@@ -10,21 +10,17 @@
         padding: 0;
     }
 
-    .agencyHighlights {
+    .projects {
         list-style-type: none;
 
         padding-left: 0;
 
-        .agencyHighlight {
-            dd {
-                margin: 0;
-            }
-
-            .client {
+        .project {
+            header {
                 font-weight: 500;
             }
-            
-            .agencyAchievements {
+        
+            .highlights {
                 list-style-type: disc;            
             }
         }
