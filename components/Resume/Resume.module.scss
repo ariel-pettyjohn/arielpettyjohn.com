@@ -107,7 +107,10 @@
         width: 100%;
     }
 
-    .education { margin: 0 0 2em; }
+    .education {
+        margin: 0 0 2em; 
+        padding: 2em;
+    }
 }
 
 @media (min-width: variables.$laptop) {
