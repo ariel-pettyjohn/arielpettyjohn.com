@@ -8,7 +8,7 @@
 }
 
 .downloadPDF {
-    background-color: #6a747d;
+    background-color: rgba(0, 10, 19, 0.5843137255);
     
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
 
     z-index: 9999;
 
-    &:hover { background-color: #505A5E; }
+    &:hover { background-color: rgba(0, 10, 14, 0.6862745098); }
 
     a {
         color: white;

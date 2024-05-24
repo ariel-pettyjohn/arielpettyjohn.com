@@ -1,25 +1,26 @@
 @use "../../styles/variables.scss";
 
 .Resume {
-    padding: variables.$safeAreaTop 
+    padding: calc(variables.$safeAreaTop + var(--page-marginTop))
              variables.$safeAreaRight 
              0 
              variables.$safeAreaLeft;
 
     background-color: white;
 
-    border-bottom: solid 2px #6a747d;
+    filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.5));
 
     @media (orientation: portrait), 
         (min-width: variables.$tablet) and (max-aspect-ratio: 2 / 1) {
-        margin-bottom: var(--resume-marginTop);
+        margin-bottom: calc(var(--resume-marginTop) - var(--page-marginTop));
     }
 }
 
 .profile {
     background: white;
-    border-top: solid 2px #6a747d;
-    
+  
+    filter: drop-shadow(0 -0.125rem 0.25rem rgba(0, 0, 0, 0.5));
+
     margin-bottom: 0;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -77,10 +78,10 @@
 
 @media (min-width: variables.$mobile) {     
     .Resume {
-        padding: calc(2em + variables.$safeAreaTop) 
-                 calc(2em + variables.$safeAreaRight) 
-                 calc(2em + variables.$safeAreaBottom) 
-                 calc(2em + variables.$safeAreaLeft);
+        padding: calc(2em + env(safe-area-inset-top) + var(--page-marginTop)) 
+                 calc(2em + env(safe-area-inset-right)) 
+                 calc(2em + env(safe-area-inset-bottom)) 
+                 calc(2em + env(safe-area-inset-left));
     }
     
     .introduction {
@@ -90,8 +91,8 @@
     }
 
     .profile {
-        border-top: none;
-        
+        filter: none;
+
         margin: 0 0 0 1em;
         padding-bottom: 0;
         padding-top: 0;
